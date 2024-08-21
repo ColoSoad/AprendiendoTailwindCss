@@ -9,12 +9,72 @@
 </head>
 <body class="bg-purple-600">
 
+    <div class="pb-4 flex justify-around ">
+        <a href="../index.html" class="text- 5xl text-center text-slate-300 my-8 bg-slate-500 p-3 rounded-md w-48 block hover:bg-slate-600 border-slate-600 border-2">
+            ATRAS
+        </a>
+        <button href="../index.html" class="text-slate-300 my-8 bg-slate-500 p-3 rounded-md w-48 hover:bg-slate-600 border-slate-600 border-2">Haz Click Aquí!</button>
+        
+    </div>  
+
     <form action="" class="bg-white w-80 mx-auto mt-16 rounded-lg p-6">
 
-        <input class="border border-gray-300 w-full px-3 py-2 mb-4 rounded-md" type="text" placeholder="Nombre"></input>
-        <input class="border border-gray-300 w-full px-3 py-2 mb-4 rounded-md" type="email" placeholder="Correo"></input>
-        <input class="border border-gray-300 w-full px-3 py-2 mb-4 rounded-md" type="password" placeholder="Contraseña"></input>
-        <input class="bg-purple-600 w-full py-2 text-white rounded-md cursor-pointer" type="submit" value="INGRESAR"></input>
+        <input 
+        class="
+        focus:outline-none 
+        focus:ring-4
+        focus:ring-purple-600
+        focus:ring-opacity-50
+        border 
+        border-purple-300
+        w-full 
+        px-3 
+        py-2 
+        mb-4 
+        rounded-md
+        " 
+        type="text" placeholder="Nombre" ></input>
+
+        <input 
+        class="
+        focus:outline-none 
+        focus:ring-4
+        focus:ring-purple-600
+        focus:ring-opacity-50
+        invalid:focus:ring-red-600
+        border 
+        border-gray-300 
+        w-full 
+        px-3 
+        py-2 
+        mb-0 
+        rounded-md
+        peer
+        " 
+        type="email" placeholder="Correo"></input>
+
+        <p class="
+        text-red-600 
+        hidden
+        peer-invalid:block
+        ">(Correo incorrecto)</p>
+
+        <input 
+        class="
+        disabled:bg-red-200 
+        border 
+        border-gray-300 
+        w-full 
+        px-3 
+        py-2 
+        mt-4
+        mb-4 
+        rounded-md
+        " 
+        type="password" placeholder="Contraseña" disabled></input>
+
+        <input 
+        class="bg-purple-600 w-full py-2 text-white rounded-md cursor-pointer hover:bg-purple-500" type="submit" value="INGRESAR"></input>
 
     </form>
 </body>
