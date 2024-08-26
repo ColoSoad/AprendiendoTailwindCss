@@ -22,6 +22,10 @@ module.exports = {
                 150: '600px',
                 200: '800px',
             },
+            screens: {
+                smartphone: '340px',
+                tablet: '640px',
+            },
         },
     },
     plugins: [],
