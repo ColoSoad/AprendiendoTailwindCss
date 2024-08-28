@@ -24,6 +24,7 @@ module.exports = {
             },
             screens: {
                 smartphone: '340px',
+                smartphoneRotate: '500px',
                 tablet: '640px',
             },
         },
