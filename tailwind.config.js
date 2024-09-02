@@ -5,6 +5,11 @@ module.exports = {
         extend: {
             colors: {
                 fucsiaCool: '#4a044e',
+                azulFb: '#3B5998',
+                insta: '#CE097B',
+                insta2: '#FACD24',
+                linkaBg: '#306CB2',
+                linka: '#080808',
             },
             spacing: {
                 42: '170px',
