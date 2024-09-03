@@ -28,7 +28,7 @@ module.exports = {
                 200: '800px',
             },
             screens: {
-                smartphone: '340px',
+                smartphone: '400px',
                 smartphoneRotate: '500px',
                 tablet: '640px',
             },

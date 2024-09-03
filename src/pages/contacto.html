@@ -8,31 +8,181 @@
     <link rel="icon" type="icono" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeKPw4CK4jcH7udsFHZdiB3iIOuI3fUCsxUZosXy4Y1yd25NA-dzCBPrSDIhg1BwObl3w&usqp=CAU" />
     <title>Tailwind - CONTACTO</title>
 </head>
-<body class="bg-purple-600 h-screen">
+<body class="bg-purple-600 h-screen ">
     <a class="
-        m-8
-        flex
-        justify-center
-        items-center
-        text-3xl
+        fixed
+        left-4
+        top-4
+        text-center
+        leading-10
+        text-2xl
         rounded-full 
         bg-pink-700
-        w-16
-        h-16
+        w-10
+        h-10
         hover:bg-slate-600 
-        border-slate-600 border-2"
+        border-slate-600 border-2
+        "
         href="../index.html">
             <i class="fa-solid fa-arrow-left"></i>
-    </a>                
-    <div class="flex flex-wrap items-center justify-center w-100">
-        <p class="text-center text-5xl mb-4">
-            EJEMPLOS DE PSEUDOCLASES
-        </p>
+    </a> 
+    <header>
+        <div class="p-3 smartphone:mt-20 smartphoneRotate:mt-20">
+            <p class="text-center smartphone:text-2xl smartphoneRotate:text-5xl">
+                EJEMPLOS DE PSEUDOCLASES
+            </p>
+        </div>
+    </header>                   
+    <main class="w-full flex justify-center items-center flex-col">    
         <p class="text-center text-3xl mt-20 mx-auto mb-10 w-96">N°1( after, hover, focus, file, marker, selection, first-line, firts-letter )</p>
-    </div>
-    <div class="pb-4 flex justify-center w-100">        
+        <div class="w-96 bg-slate-100 rounded-lg flex items-center justify-center flex-wrap">
+            <button href="#" class="
+                        after:content-['']
+                        after:absolute 
+                        after:left-42
+                        relative
+                        after:border-8
+                        after:border-transparent
+                        after:top-4
+                        after:border-l-pink-800 
+                        hover:after:border-l-pink-600
+                        text-slate-300 
+                        my-8 
+                        bg-pink-800
+                        p-3
+                        rounded-md 
+                        w-42 
+                        hover:bg-pink-600 ">
+                            Haz Click Aquí!
+                    </button>
+                    <input class="
+                        w-42
+                        border 
+                        ml-2 
+                        px-2 
+                        placeholder:text-pink-800 
+                        placeholder:italic 
+                        focus:outline-none 
+                        focus:ring-4
+                        focus:ring-pink-800
+                        focus:ring-opacity-50 
+                        border-pink-800
+                        
+                        " 
+                        type="text" 
+                        placeholder="Nombre"
+                    >
+                    <input type="file" class="
+                        file:bg-pink-800
+                        file:border-0
+                        file:rounded-lg
+                        file:text-slate-300
+                        file:font-semibold 
+                        file:px-3
+                        hover:file:bg-pink-600
+                        my-8
+                        justify-center"
+                        >
+        </div>
+        <div class="w-96 bg-slate-100 rounded-lg flex items-center justify-center flex-wrap m-3 p-3">
+            <ol class="
+                        w-96
+                        list-decimal
+                        marker:text-violet-600
+                        marker:font-bold
+                        my-8
+                        ml-8
+                        ">
+                        <li>Item</li>
+                        <li>Item</li>
+                        <li>Item</li>
+                    </ol>
+                    <p class="
+                    ml-6
+                    selection:bg-pink-600
+                    selection:text-white
+                    ">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi minima atque quasi ipsam laboriosam, non quos amet. Beatae, nemo dolorem dolore tempora aliquid consequuntur accusamus expedita perferendis quisquam, asperiores voluptatum!
+                    </p>
+                    <p class="
+                    first-line:uppercase
+                    first-line:-tracking-widest
+                    first-letter:text-7xl
+                    first-letter:font-bold
+                    first-letter:mr-3
+                    first-letter::float-left
+                    ml-6
+                    ">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi minima atque quasi ipsam laboriosam, non quos amet. Beatae, nemo dolorem dolore tempora aliquid consequuntur accusamus expedita perferendis quisquam, asperiores voluptatum!
+                    </p>
+        </div>
+        <p class="text-center text-3xl mt-20 mx-auto mb-10 w-96">N°2( focus, invalid, peer, disabled y hover )</p>
+        <div class="w-125 flex items-center justify-center flex-col" >
+            <form action="" class="bg-white w-96 my-8 rounded-lg p-8 text-center">
+                <input 
+                    class="
+                    focus:outline-none 
+                    focus:ring-4
+                    focus:ring-purple-600
+                    focus:ring-opacity-50
+                    border 
+                    border-purple-300
+                    w-full 
+                    px-3 
+                    py-2 
+                    mb-4 
+                    rounded-md
+                    " 
+                    type="text" placeholder="Nombre" >
+                </input>
+                <input 
+                class="
+                focus:outline-none 
+                focus:ring-4
+                focus:ring-purple-600
+                focus:ring-opacity-50
+                invalid:focus:ring-red-600
+                border 
+                border-gray-300 
+                w-full 
+                px-3 
+                py-2 
+                mb-0 
+                rounded-md
+                peer
+                " 
+                type="email" placeholder="Correo">
+                </input>
+                    <p class="
+                        text-red-600 
+                        hidden
+                        peer-invalid:block">
+                            (Correo incorrecto)
+                    </p>
+    
+                <input 
+                    class="
+                    disabled:bg-red-200 
+                    border 
+                    border-gray-300 
+                    w-full 
+                    px-3 
+                    py-2 
+                    mt-4
+                    mb-4 
+                    rounded-md
+                    " 
+                    type="password" placeholder="Contraseña" disabled>
+                </input>
+    
+                <input 
+                    class="bg-purple-600 w-full py-2 text-white rounded-md cursor-pointer hover:bg-purple-500" type="submit" value="INGRESAR">
+                </input>
+            </form>
+        </div>
+    </main>
+    <!-- <div class="pb-4 flex justify-center w-100 items-center">        
         <div>
-            
             <div class="rounded-md bg-white p-10 w-125 mx-auto">
                 <div class="w-96 flex items-center justify-center flex-wrap">
                     <button href="#" class="
@@ -117,7 +267,7 @@
             <div class="w-125 flex items-center justify-center flex-col" >
                 <p class="text-center text-3xl my-8 mx-auto w-96">N°2( focus, invalid, peer, disabled y hover )
                 </p>
-                <form action="" class="bg-white w-96 my-8 rounded-lg p-6 text-center">
+                <form action="" class="bg-white w-96 my-8 rounded-lg p-8 text-center">
                     <input 
                         class="
                         focus:outline-none 
@@ -152,12 +302,12 @@
                     " 
                     type="email" placeholder="Correo">
                     </input>
-        
-                    <p class="
-                    text-red-600 
-                    hidden
-                    peer-invalid:block
-                    ">(Correo incorrecto)</p>
+                        <p class="
+                            text-red-600 
+                            hidden
+                            peer-invalid:block">
+                                (Correo incorrecto)
+                        </p>
         
                     <input 
                         class="
@@ -181,7 +331,7 @@
             </div>
             </div>            
         </div>
-    </div>
+    </div> -->
     <footer>
         <div class="text-center bg-purple-600 py-10">
             <p class="text-slate-300">© 2024 TAILWINDCSS PRATICE</p>
