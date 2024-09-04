@@ -24,11 +24,12 @@ module.exports = {
                 50: '200px',
                 100: '400px',
                 125: '500px',
+                134: '535px',
                 150: '600px',
                 200: '800px',
             },
             screens: {
-                smartphone: '400px',
+                smartphone: '390px',
                 smartphoneRotate: '500px',
                 tablet: '640px',
             },

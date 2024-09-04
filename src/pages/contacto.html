@@ -8,7 +8,7 @@
     <link rel="icon" type="icono" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeKPw4CK4jcH7udsFHZdiB3iIOuI3fUCsxUZosXy4Y1yd25NA-dzCBPrSDIhg1BwObl3w&usqp=CAU" />
     <title>Tailwind - CONTACTO</title>
 </head>
-<body class="bg-purple-600 h-screen ">
+<body class="bg-purple-600 h-screen box-border">
     <a class="
         fixed
         left-4
@@ -27,36 +27,35 @@
             <i class="fa-solid fa-arrow-left"></i>
     </a> 
     <header>
-        <div class="p-3 smartphone:mt-20 smartphoneRotate:mt-20">
+        <div class="p-3 smartphone:mt-20 smartphoneRotate:mt-20 w-80">
             <p class="text-center smartphone:text-2xl smartphoneRotate:text-5xl">
                 EJEMPLOS DE PSEUDOCLASES
             </p>
         </div>
     </header>                   
-    <main class="w-full flex justify-center items-center flex-col">    
-        <p class="text-center text-3xl mt-20 mx-auto mb-10 w-96">N°1( after, hover, focus, file, marker, selection, first-line, firts-letter )</p>
-        <div class="w-96 bg-slate-100 rounded-lg flex items-center justify-center flex-wrap">
+    <main class="flex justify-center items-center flex-col">    
+        <p class="text-center text-3xl mt-20 mx-auto mb-10 w-80">N°1( after, hover, focus, file, marker, selection, first-line, firts-letter )</p>
+        <div class="w-80 bg-slate-100 rounded-lg flex items-center justify-center flex-wrap">
             <button href="#" class="
                         after:content-['']
                         after:absolute 
-                        after:left-42
+                        after:left-32
                         relative
                         after:border-8
                         after:border-transparent
-                        after:top-4
-                        after:border-l-pink-800 
+                        after:top-3                        after:border-l-pink-800 
                         hover:after:border-l-pink-600
                         text-slate-300 
-                        my-8 
+                        my-4 
                         bg-pink-800
-                        p-3
+                        p-2
                         rounded-md 
-                        w-42 
+                        w-32 
                         hover:bg-pink-600 ">
-                            Haz Click Aquí!
+                           Click Aquí!
                     </button>
                     <input class="
-                        w-42
+                        w-32
                         border 
                         ml-2 
                         px-2 
@@ -78,15 +77,15 @@
                         file:rounded-lg
                         file:text-slate-300
                         file:font-semibold 
-                        file:px-3
+                        file:px-4
                         hover:file:bg-pink-600
-                        my-8
+                        my-4
                         justify-center"
                         >
         </div>
-        <div class="w-96 bg-slate-100 rounded-lg flex items-center justify-center flex-wrap m-3 p-3">
+        <div class="w-80 bg-slate-100 rounded-lg flex items-center justify-center flex-wrap m-3 p-3">
             <ol class="
-                        w-96
+                        w-80
                         list-decimal
                         marker:text-violet-600
                         marker:font-bold
@@ -116,9 +115,9 @@
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi minima atque quasi ipsam laboriosam, non quos amet. Beatae, nemo dolorem dolore tempora aliquid consequuntur accusamus expedita perferendis quisquam, asperiores voluptatum!
                     </p>
         </div>
-        <p class="text-center text-3xl mt-20 mx-auto mb-10 w-96">N°2( focus, invalid, peer, disabled y hover )</p>
-        <div class="w-125 flex items-center justify-center flex-col" >
-            <form action="" class="bg-white w-96 my-8 rounded-lg p-8 text-center">
+        <p class="text-center text-3xl mt-20 mx-auto mb-10 w-80">N°2( focus, invalid, peer, disabled y hover )</p>
+        <div class="w-80 flex items-center justify-center flex-col" >
+            <form action="" class="bg-white w-80 my-8 rounded-lg p-8 text-center">
                 <input 
                     class="
                     focus:outline-none 
@@ -183,8 +182,8 @@
     </main>
     <!-- <div class="pb-4 flex justify-center w-100 items-center">        
         <div>
-            <div class="rounded-md bg-white p-10 w-125 mx-auto">
-                <div class="w-96 flex items-center justify-center flex-wrap">
+            <div class="rounded-md bg-white p-10 w-80 mx-auto">
+                <div class="w-80 flex items-center justify-center flex-wrap">
                     <button href="#" class="
                         after:content-['']
                         after:absolute 
@@ -233,7 +232,7 @@
                         ml-3"
                         >
                     <ol class="
-                        w-96
+                        w-80
                         list-decimal
                         marker:text-violet-600
                         marker:font-bold
@@ -264,10 +263,10 @@
                     </p>
                 </div>
             </div>
-            <div class="w-125 flex items-center justify-center flex-col" >
-                <p class="text-center text-3xl my-8 mx-auto w-96">N°2( focus, invalid, peer, disabled y hover )
+            <div class="w-80 flex items-center justify-center flex-col" >
+                <p class="text-center text-3xl my-8 mx-auto w-80">N°2( focus, invalid, peer, disabled y hover )
                 </p>
-                <form action="" class="bg-white w-96 my-8 rounded-lg p-8 text-center">
+                <form action="" class="bg-white w-80 my-8 rounded-lg p-8 text-center">
                     <input 
                         class="
                         focus:outline-none 
