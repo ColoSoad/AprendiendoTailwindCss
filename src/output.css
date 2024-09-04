@@ -668,10 +668,6 @@ video {
   margin-top: 1rem;
 }
 
-.ml-1 {
-  margin-left: 0.25rem;
-}
-
 .box-border {
   box-sizing: border-box;
 }
@@ -706,6 +702,14 @@ video {
 
 .h-screen {
   height: 100vh;
+}
+
+.h-auto {
+  height: auto;
+}
+
+.h-150 {
+  height: 600px;
 }
 
 .w-10 {
@@ -976,12 +980,12 @@ video {
   padding-bottom: 1rem;
 }
 
-.pt-2 {
-  padding-top: 0.5rem;
-}
-
 .pl-2 {
   padding-left: 0.5rem;
+}
+
+.pt-2 {
+  padding-top: 0.5rem;
 }
 
 .text-center {
@@ -1160,24 +1164,14 @@ video {
   background-color: rgb(157 23 77 / var(--tw-bg-opacity));
 }
 
-.file\:px-3::file-selector-button {
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
-.file\:px-4::file-selector-button {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-.file\:px-0::file-selector-button {
-  padding-left: 0px;
-  padding-right: 0px;
-}
-
 .file\:px-2::file-selector-button {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+}
+
+.file\:px-3::file-selector-button {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 
 .file\:font-semibold::file-selector-button {
@@ -1319,12 +1313,21 @@ video {
 }
 
 @media (min-width: 390px) {
+  .smartphone\:my-20 {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+
   .smartphone\:mb-20 {
     margin-bottom: 5rem;
   }
 
   .smartphone\:mt-20 {
     margin-top: 5rem;
+  }
+
+  .smartphone\:mb-40 {
+    margin-bottom: 10rem;
   }
 
   .smartphone\:w-60 {
@@ -1339,6 +1342,11 @@ video {
   .smartphone\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+
+  .smartphone\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 }
 
