@@ -4,6 +4,8 @@ module.exports = {
     theme: {
         extend: {
             colors: {
+                ladrillo: '#D26932',
+                cemento: '#482A14',
                 fucsiaCool: '#4a044e',
                 azulFb: '#3B5998',
                 insta: '#CE097B',
