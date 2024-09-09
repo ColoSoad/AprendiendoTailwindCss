@@ -34,6 +34,8 @@ module.exports = {
                 smartphone: '390px',
                 smartphoneRotate: '500px',
                 tablet: '640px',
+                fhd: '1280px',
+                dosK: '1440px',
             },
         },
     },

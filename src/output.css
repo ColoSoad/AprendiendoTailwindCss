@@ -594,6 +594,7 @@ video {
   display: grid;
   height: 200px;
   width: 200px;
+  cursor: pointer;
   place-content: center;
   border-radius: 0.5rem;
   border-width: 2px;
@@ -733,8 +734,8 @@ video {
   height: 10rem;
 }
 
-.h-\[90px\] {
-  height: 90px;
+.h-\[120px\] {
+  height: 120px;
 }
 
 .h-full {
@@ -743,10 +744,6 @@ video {
 
 .h-screen {
   height: 100vh;
-}
-
-.h-\[120px\] {
-  height: 120px;
 }
 
 .w-10 {
@@ -767,6 +764,10 @@ video {
 
 .w-80 {
   width: 20rem;
+}
+
+.w-\[85\%\] {
+  width: 85%;
 }
 
 .w-full {
@@ -933,56 +934,8 @@ video {
   background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeKPw4CK4jcH7udsFHZdiB3iIOuI3fUCsxUZosXy4Y1yd25NA-dzCBPrSDIhg1BwObl3w&usqp=CAU');
 }
 
-.bg-gradient-to-b {
-  background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
-}
-
-.bg-gradient-to-r {
-  background-image: linear-gradient(to right, var(--tw-gradient-stops));
-}
-
 .bg-\[url\(\'https\:\/\/img\.freepik\.com\/foto-gratis\/arco-iris-al-final-paisaje-carretera_23-2151596720\.jpg\?size\=626\&ext\=jpg\&ga\=GA1\.1\.1244375472\.1717090889\&semt\=ais_hybrid\'\)\] {
   background-image: url('https://img.freepik.com/foto-gratis/arco-iris-al-final-paisaje-carretera_23-2151596720.jpg?size=626&ext=jpg&ga=GA1.1.1244375472.1717090889&semt=ais_hybrid');
-}
-
-.bg-\[url\(\'https\:\/\/videocdn\.cdnpk\.net\/videos\/4609b465-f06b-4470-8cd4-c62ac4fd9600\/horizontal\/previews\/clear\/small\.mp4\?token\=exp\=1725648140\~hmac\=f5326e5c5fb0a84b30b0f8864bc7f25e562c89b4bd712fe4d342fd0b1210c213\'\)\] {
-  background-image: url('https://videocdn.cdnpk.net/videos/4609b465-f06b-4470-8cd4-c62ac4fd9600/horizontal/previews/clear/small.mp4?token=exp=1725648140~hmac=f5326e5c5fb0a84b30b0f8864bc7f25e562c89b4bd712fe4d342fd0b1210c213');
-}
-
-.bg-\[url\(\'\'\)\] {
-  background-image: url('');
-}
-
-.bg-\[url\(\'hhttps\:\/\/videocdn\.cdnpk\.net\/videos\/9af99bca-4b08-4166-9d74-7489c4842395\/horizontal\/previews\/clear\/small\.mp4\?token\=exp\=1725648363\~hmac\=efebc59bd68c5b67d4fa535a12cba991365e6e71404154b89607e45ad304b733\'\)\] {
-  background-image: url('hhttps://videocdn.cdnpk.net/videos/9af99bca-4b08-4166-9d74-7489c4842395/horizontal/previews/clear/small.mp4?token=exp=1725648363~hmac=efebc59bd68c5b67d4fa535a12cba991365e6e71404154b89607e45ad304b733');
-}
-
-.bg-\[url\(\'https\:\/\/img\.freepik\.com\/foto-gratis\/vista-montana-estetica-ensueno_23-2151700272\.jpg\?size\=626\&ext\=jpg\&ga\=GA1\.1\.1244375472\.1717090889\&semt\=ais_hybrid\'\)\] {
-  background-image: url('https://img.freepik.com/foto-gratis/vista-montana-estetica-ensueno_23-2151700272.jpg?size=626&ext=jpg&ga=GA1.1.1244375472.1717090889&semt=ais_hybrid');
-}
-
-.bg-\[url\(\'https\:\/\/img\.freepik\.com\/foto-gratis\/paisaje-natural-vista-playa_23-2151682967\.jpg\?ga\=GA1\.1\.1244375472\.1717090889\&semt\=ais_hybrid\'\)\] {
-  background-image: url('https://img.freepik.com/foto-gratis/paisaje-natural-vista-playa_23-2151682967.jpg?ga=GA1.1.1244375472.1717090889&semt=ais_hybrid');
-}
-
-.bg-\[url\(\'https\:\/\/img\.freepik\.com\/foto-gratis\/vista-forma-corazon-montanas-paisaje-lago_23-2150825097\.jpg\?size\=626\&ext\=jpg\&ga\=GA1\.1\.1244375472\.1717090889\&semt\=ais_hybrid\'\)\] {
-  background-image: url('https://img.freepik.com/foto-gratis/vista-forma-corazon-montanas-paisaje-lago_23-2150825097.jpg?size=626&ext=jpg&ga=GA1.1.1244375472.1717090889&semt=ais_hybrid');
-}
-
-.bg-\[url\(\'https\:\/\/img\.freepik\.com\/foto-gratis\/vista-impresionante-paisaje-natural-playa_23-2151682871\.jpg\?ga\=GA1\.1\.1244375472\.1717090889\&semt\=ais_hybrid\'\)\] {
-  background-image: url('https://img.freepik.com/foto-gratis/vista-impresionante-paisaje-natural-playa_23-2151682871.jpg?ga=GA1.1.1244375472.1717090889&semt=ais_hybrid');
-}
-
-.bg-\[url\(\'https\:\/\/img\.freepik\.com\/foto-gratis\/vista-forma-corazon-montanas-paisaje-lago_23-2150825175\.jpg\?ga\=GA1\.1\.1244375472\.1717090889\&semt\=ais_hybrid\'\)\] {
-  background-image: url('https://img.freepik.com/foto-gratis/vista-forma-corazon-montanas-paisaje-lago_23-2150825175.jpg?ga=GA1.1.1244375472.1717090889&semt=ais_hybrid');
-}
-
-.bg-\[url\(\'https\:\/\/img\.freepik\.com\/foto-gratis\/vista-impresionante-paisaje-natural-playa_23-2151683032\.jpg\?ga\=GA1\.1\.1244375472\.1717090889\&semt\=ais_hybrid\'\)\] {
-  background-image: url('https://img.freepik.com/foto-gratis/vista-impresionante-paisaje-natural-playa_23-2151683032.jpg?ga=GA1.1.1244375472.1717090889&semt=ais_hybrid');
-}
-
-.bg-\[url\(\'https\:\/\/img\.freepik\.com\/foto-gratis\/vista-impresionante-paisaje-natural-playa_23-2151683012\.jpg\?ga\=GA1\.1\.1244375472\.1717090889\&semt\=ais_hybrid\'\)\] {
-  background-image: url('https://img.freepik.com/foto-gratis/vista-impresionante-paisaje-natural-playa_23-2151683012.jpg?ga=GA1.1.1244375472.1717090889&semt=ais_hybrid');
 }
 
 .bg-\[url\(\'https\:\/\/img\.freepik\.com\/foto-gratis\/hermoso-paisaje-lago_23-2150725023\.jpg\?ga\=GA1\.1\.1244375472\.1717090889\&semt\=ais_hybrid\'\)\] {
@@ -999,6 +952,42 @@ video {
 
 .bg-\[url\(\'https\:\/\/img\.freepik\.com\/foto-gratis\/paisaje-natural-cielo-despejado-estrellado_23-2151683117\.jpg\?ga\=GA1\.1\.1244375472\.1717090889\&semt\=ais_hybrid\'\)\] {
   background-image: url('https://img.freepik.com/foto-gratis/paisaje-natural-cielo-despejado-estrellado_23-2151683117.jpg?ga=GA1.1.1244375472.1717090889&semt=ais_hybrid');
+}
+
+.bg-\[url\(\'https\:\/\/img\.freepik\.com\/foto-gratis\/paisaje-natural-vista-playa_23-2151682967\.jpg\?ga\=GA1\.1\.1244375472\.1717090889\&semt\=ais_hybrid\'\)\] {
+  background-image: url('https://img.freepik.com/foto-gratis/paisaje-natural-vista-playa_23-2151682967.jpg?ga=GA1.1.1244375472.1717090889&semt=ais_hybrid');
+}
+
+.bg-\[url\(\'https\:\/\/img\.freepik\.com\/foto-gratis\/vista-forma-corazon-montanas-paisaje-lago_23-2150825097\.jpg\?size\=626\&ext\=jpg\&ga\=GA1\.1\.1244375472\.1717090889\&semt\=ais_hybrid\'\)\] {
+  background-image: url('https://img.freepik.com/foto-gratis/vista-forma-corazon-montanas-paisaje-lago_23-2150825097.jpg?size=626&ext=jpg&ga=GA1.1.1244375472.1717090889&semt=ais_hybrid');
+}
+
+.bg-\[url\(\'https\:\/\/img\.freepik\.com\/foto-gratis\/vista-forma-corazon-montanas-paisaje-lago_23-2150825175\.jpg\?ga\=GA1\.1\.1244375472\.1717090889\&semt\=ais_hybrid\'\)\] {
+  background-image: url('https://img.freepik.com/foto-gratis/vista-forma-corazon-montanas-paisaje-lago_23-2150825175.jpg?ga=GA1.1.1244375472.1717090889&semt=ais_hybrid');
+}
+
+.bg-\[url\(\'https\:\/\/img\.freepik\.com\/foto-gratis\/vista-impresionante-paisaje-natural-playa_23-2151682871\.jpg\?ga\=GA1\.1\.1244375472\.1717090889\&semt\=ais_hybrid\'\)\] {
+  background-image: url('https://img.freepik.com/foto-gratis/vista-impresionante-paisaje-natural-playa_23-2151682871.jpg?ga=GA1.1.1244375472.1717090889&semt=ais_hybrid');
+}
+
+.bg-\[url\(\'https\:\/\/img\.freepik\.com\/foto-gratis\/vista-impresionante-paisaje-natural-playa_23-2151683012\.jpg\?ga\=GA1\.1\.1244375472\.1717090889\&semt\=ais_hybrid\'\)\] {
+  background-image: url('https://img.freepik.com/foto-gratis/vista-impresionante-paisaje-natural-playa_23-2151683012.jpg?ga=GA1.1.1244375472.1717090889&semt=ais_hybrid');
+}
+
+.bg-\[url\(\'https\:\/\/img\.freepik\.com\/foto-gratis\/vista-impresionante-paisaje-natural-playa_23-2151683032\.jpg\?ga\=GA1\.1\.1244375472\.1717090889\&semt\=ais_hybrid\'\)\] {
+  background-image: url('https://img.freepik.com/foto-gratis/vista-impresionante-paisaje-natural-playa_23-2151683032.jpg?ga=GA1.1.1244375472.1717090889&semt=ais_hybrid');
+}
+
+.bg-\[url\(\'https\:\/\/img\.freepik\.com\/foto-gratis\/vista-montana-estetica-ensueno_23-2151700272\.jpg\?size\=626\&ext\=jpg\&ga\=GA1\.1\.1244375472\.1717090889\&semt\=ais_hybrid\'\)\] {
+  background-image: url('https://img.freepik.com/foto-gratis/vista-montana-estetica-ensueno_23-2151700272.jpg?size=626&ext=jpg&ga=GA1.1.1244375472.1717090889&semt=ais_hybrid');
+}
+
+.bg-gradient-to-b {
+  background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
+}
+
+.bg-gradient-to-r {
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
 
 .from-fucsiaCool {
@@ -1083,6 +1072,11 @@ video {
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
+}
+
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .pb-10 {
@@ -1461,6 +1455,10 @@ video {
     height: 600px;
   }
 
+  .smartphoneRotate\:w-\[84\%\] {
+    width: 84%;
+  }
+
   .smartphoneRotate\:text-5xl {
     font-size: 3rem;
     line-height: 1;
@@ -1496,12 +1494,25 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:mx-14 {
+    margin-left: 3.5rem;
+    margin-right: 3.5rem;
+  }
+
+  .md\:h-\[200px\] {
+    height: 200px;
+  }
+
   .md\:w-125 {
     width: 500px;
   }
 
   .md\:w-96 {
     width: 24rem;
+  }
+
+  .md\:gap-2 {
+    gap: 0.5rem;
   }
 
   .md\:bg-violet-950 {
@@ -1516,6 +1527,11 @@ video {
 }
 
 @media (min-width: 1024px) {
+  .lg\:mx-\[120px\] {
+    margin-left: 120px;
+    margin-right: 120px;
+  }
+
   .lg\:h-\[150px\] {
     height: 150px;
   }
@@ -1532,8 +1548,24 @@ video {
     width: 600px;
   }
 
+  .lg\:gap-3 {
+    gap: 0.75rem;
+  }
+
   .lg\:bg-slate-600 {
     --tw-bg-opacity: 1;
     background-color: rgb(71 85 105 / var(--tw-bg-opacity));
+  }
+}
+
+@media (min-width: 1280px) {
+  .fhd\:h-\[280px\] {
+    height: 280px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .dosK\:h-\[320px\] {
+    height: 320px;
   }
 }

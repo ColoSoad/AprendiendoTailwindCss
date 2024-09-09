@@ -10,6 +10,6 @@
         @apply bg-ladrillo w-10 h-10 grid place-content-center rounded-lg text-white font-bold border-2 border-cemento text-2xl;
     }
     .collage {
-        @apply bg-cover bg-center w-50 h-50 grid place-content-center rounded-lg border-2 border-white;
+        @apply bg-cover bg-center w-50 h-50 grid place-content-center rounded-lg border-2 border-white cursor-pointer;
     }
 }
