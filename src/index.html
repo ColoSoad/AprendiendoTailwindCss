@@ -6,21 +6,22 @@
     <link href="./output.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" type="icono" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeKPw4CK4jcH7udsFHZdiB3iIOuI3fUCsxUZosXy4Y1yd25NA-dzCBPrSDIhg1BwObl3w&usqp=CAU" />
+    <script defer src="./js/index.js"></script>
     <title>Tailwind - install</title>
 </head>
-<body class="h-screen box-border bg-gradient-to-b from-fucsiaCool via-purple-800 to-purple-600 smartphoneRotate:h-150">
-    <main class="h-full ">
+<body class="dark:bg-black dark:transition-all ease-in-out">
+    <header class="mt-10 flex justify-center">
         <div class="flex justify-center mb-5">
             <span class="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 text-center text-5xl mt-10">
                 Hello world!
             </span>
         </div>
-        <div class="flex 
-        place-content-center 
-        items-center
-        flex-wrap
-        gap-4">
-            <h2 class="text- 3xl  w-40 flex items-center font-bold">
+        <label for="darkMode" id="label_darkMode" class="fixed right-6 top-6"><i class="fa-solid fa-moon text-3xl cursor-pointer"></i></label>
+        <input type="checkbox" name="" id="darkMode" class="hidden">
+    </header>
+    <main>
+        <div class="flex place-content-center items-center flex-wrap gap-4">
+            <h2 class="text- 3xl  w-40 flex items-center font-bold dark:text-slate-300">
                 Esta es mi página para practicar y aprender!
             </h2>
             <div class="bg-[url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeKPw4CK4jcH7udsFHZdiB3iIOuI3fUCsxUZosXy4Y1yd25NA-dzCBPrSDIhg1BwObl3w&usqp=CAU')] bg-cover bg-center p-3 rounded-full w-40 h-40 flex items-center cursor-pointer brightness-100 contrast-100">
@@ -39,17 +40,18 @@
                 RESPONSIVE DESIGN
             </a>
         </div>          
+        
     </main>
-    <footer class="bg-purple-600">
+    <footer>
         <div class="text-center py-10">
-            <p class="text-slate-300">© 2024 TAILWINDCSS PRACTICE</p>
-            <p class="text-slate-300">Todos los derechos reservados.</p>
-            <ul class="flex justify-center flex-wrap gap-5 pt-2 text-white">
-                <li class="w-10 h-10 flex justify-center items-center bg-slate-200 shadow-xl text-3xl text-azulFb rounded-lg">
+            <p class="dark:text-slate-300">© 2024 TAILWINDCSS PRACTICE</p>
+            <p class="dark:text-slate-300">Todos los derechos reservados.</p>
+            <ul class="flex justify-center flex-wrap gap-5 pt-2 dark:text-white">
+                <li class="w-10 h-10 flex justify-center bg-black items-center dark:bg-slate-200 shadow-xl text-3xl text-azulFb rounded-lg">
                   <a href="https://www.facebook.com/colo.soad.3/" target="_blank" class="iconos-a">
                     <i class="fab fa-facebook-f icon p-2"></i>    </a>
                 </li>
-                <li class="w-10 h-10 flex justify-center items-center bg-white shadow-xl text-3xl mx-9 rounded-lg text-insta">
+                <li class="w-10 h-10 flex justify-center items-center bg-black dark:bg-white shadow-xl text-3xl mx-9 rounded-lg text-insta">
                     <a href="https://www.instagram.com/colosoad/" target="_blank" class="iconos-a">
                     <i class="fab fa-instagram icon p-2"></i>
                     </a>
