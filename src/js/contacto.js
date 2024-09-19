@@ -3,7 +3,10 @@ function recuperarInfoDeDark() {
     const infoDelDark = JSON.parse(localStorage.getItem('infoDark'));
     if (infoDelDark !== '') {
         dar = infoDelDark.darkie;
-        document.documentElement.classList.toggle(dar);
+        let che = infoDelDark.isChecked;
+        if (che == true) {
+            document.documentElement.classList.toggle(dar);
+        }
     } else {
         localStorage.removeItem('infoDark');
     }
