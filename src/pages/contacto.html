@@ -6,7 +6,7 @@
     <link href="../output.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" type="icono" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeKPw4CK4jcH7udsFHZdiB3iIOuI3fUCsxUZosXy4Y1yd25NA-dzCBPrSDIhg1BwObl3w&usqp=CAU" />
-    <script defer src="../js/contacto.js"></script>
+    <script defer src="../js/script.js"></script>
     <title>Tailwind - CONTACTO</title>
 </head>
 <body class="bg-fucsiaCool dark:bg-black">
@@ -28,13 +28,13 @@
             <i class="fa-solid fa-arrow-left"></i>
     </a> 
     <header class="p-3 smartphone:mt-20 smartphoneRotate:mt-20">
-        <p class="text-center smartphone:text-2xl smartphoneRotate:text-5xl">
+        <p class="text-center smartphone:text-2xl smartphoneRotate:text-5xl dark:text-slate-400">
             EJEMPLOS DE PSEUDOCLASES
         </p>
     </header>                   
     <main class="flex justify-center items-center flex-col">    
-        <p class="text-center text-3xl mt-20 mx-auto mb-10 w-80">N°1( after, hover, focus, file, marker, selection, first-line, firts-letter )</p>
-        <div class="w-80 bg-slate-100 rounded-lg flex items-center justify-center flex-wrap dark:bg-black">
+        <p class="text-center text-3xl mt-20 mx-auto mb-10 w-80 dark:text-slate-400">N°1( after, hover, focus, file, marker, selection, first-line, firts-letter )</p>
+        <div class="w-80 bg-slate-100 rounded-lg flex items-center justify-center flex-wrap dark:bg-slate-100">
             <button href="#" class="after:content-[''] after:absolute after:left-32 relative after:border-8 after:border-transparent after:top-3 after:border-l-pink-800 hover:after:border-l-pink-600 text-slate-300 my-4 bg-pink-800 p-2 rounded-md w-32 hover:bg-pink-600 ">Click Aquí!</button>
             <input class="w-32 border ml-2 px-2 placeholder:text-pink-800 placeholder:italic focus:outline-none focus:ring-4 focus:ring-pink-800 focus:ring-opacity-50 border-pink-800 dark:bg-black" type="text" placeholder="Nombre">
             <input type="file" class="file:bg-pink-800 file:border-0 file:rounded-lg file:text-slate-300 file:font-semibold file:px-2 pl-7 hover:file:bg-pink-600 my-4 justify-center">
@@ -71,7 +71,7 @@
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi minima atque quasi ipsam laboriosam, non quos amet. Beatae, nemo dolorem dolore tempora aliquid consequuntur accusamus expedita perferendis quisquam, asperiores voluptatum!
                     </p>
         </div>
-        <p class="text-center text-3xl mt-20 mx-auto mb-10 w-80">N°2( focus, invalid, peer, disabled y hover )</p>
+        <p class="text-center text-3xl mt-20 mx-auto mb-10 w-80 dark:text-slate-400">N°2( focus, invalid, peer, disabled y hover )</p>
         <div class="w-80 flex items-center justify-center flex-col" >
             <form action="" class="bg-white w-80 my-8 rounded-lg p-8 text-center">
                 <input 
@@ -116,7 +116,7 @@
                     </p>
     
                 <input 
-                    class="disabled:bg-red-200 border border-gray-300 w-full px-3 py-2 mt-4 mb-4 rounded-md " type="password" placeholder="Contraseña" disabled>
+                    class="disabled:bg-red-200 border border-gray-300 w-full px-3 py-2 mt-4 mb-4 rounded-md " type="current-password" placeholder="Contraseña" disabled>
                 </input>
     
                 <input 
@@ -127,14 +127,14 @@
     </main>
     <footer>
         <div class="text-center py-10">
-            <p class="text-slate-300">© 2024 TAILWINDCSS PRATICE</p>
-            <p class="text-slate-300">Todos los derechos reservados.</p>
-            <ul class="flex justify-center flex-wrap gap-5 pt-2 text-white">
-                <li class="w-10 h-10 flex justify-center items-center bg-slate-200 shadow-xl text-3xl text-azulFb rounded-lg">
+            <p class="font-bold dark:text-slate-300 dark:font-normal">© 2024 TAILWINDCSS PRACTICE</p>
+            <p class="font-bold dark:text-slate-300 dark:font-normal">Todos los derechos reservados.</p>
+            <ul class="flex justify-center flex-wrap gap-5 pt-2 dark:text-white">
+                <li class="w-10 h-10 flex justify-center bg-black items-center dark:bg-slate-200 shadow-xl text-3xl text-azulFb rounded-lg">
                   <a href="https://www.facebook.com/colo.soad.3/" target="_blank" class="iconos-a">
                     <i class="fab fa-facebook-f icon p-2"></i>    </a>
                 </li>
-                <li class="w-10 h-10 flex justify-center items-center bg-white shadow-xl text-3xl mx-9 rounded-lg text-insta">
+                <li class="w-10 h-10 flex justify-center items-center bg-black dark:bg-white shadow-xl text-3xl mx-9 rounded-lg text-insta">
                     <a href="https://www.instagram.com/colosoad/" target="_blank" class="iconos-a">
                     <i class="fab fa-instagram icon p-2"></i>
                     </a>
