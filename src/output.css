@@ -644,16 +644,8 @@ video {
   left: 1rem;
 }
 
-.right-6 {
-  right: 1.5rem;
-}
-
 .top-4 {
   top: 1rem;
-}
-
-.top-6 {
-  top: 1.5rem;
 }
 
 .col-\[1\/4\] {
@@ -789,24 +781,24 @@ video {
   height: 10rem;
 }
 
-.h-\[100vh\] {
-  height: 100vh;
+.h-8 {
+  height: 2rem;
 }
 
-.h-\[5px\] {
-  height: 5px;
+.h-\[100vh\] {
+  height: 100vh;
 }
 
 .h-\[20px\] {
   height: 20px;
 }
 
-.h-\[15px\] {
-  height: 15px;
-}
-
 .w-10 {
   width: 2.5rem;
+}
+
+.w-14 {
+  width: 3.5rem;
 }
 
 .w-28 {
@@ -829,8 +821,8 @@ video {
   width: 20rem;
 }
 
-.w-\[20px\] {
-  width: 20px;
+.w-\[30px\] {
+  width: 30px;
 }
 
 .w-\[85\%\] {
@@ -845,10 +837,6 @@ video {
   width: 100vw;
 }
 
-.w-\[30px\] {
-  width: 30px;
-}
-
 .grow {
   flex-grow: 1;
 }
@@ -859,6 +847,10 @@ video {
 
 .basis-1\/3 {
   flex-basis: 33.333333%;
+}
+
+.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .cursor-pointer {
@@ -987,6 +979,11 @@ video {
   background-color: rgb(209 213 219 / var(--tw-bg-opacity));
 }
 
+.bg-gray-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(75 85 99 / var(--tw-bg-opacity));
+}
+
 .bg-linkaBg {
   --tw-bg-opacity: 1;
   background-color: rgb(48 108 178 / var(--tw-bg-opacity));
@@ -1029,6 +1026,14 @@ video {
 
 .bg-\[url\(\'https\:\/\/encrypted-tbn0\.gstatic\.com\/images\?q\=tbn\:ANd9GcTeKPw4CK4jcH7udsFHZdiB3iIOuI3fUCsxUZosXy4Y1yd25NA-dzCBPrSDIhg1BwObl3w\&usqp\=CAU\'\)\] {
   background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeKPw4CK4jcH7udsFHZdiB3iIOuI3fUCsxUZosXy4Y1yd25NA-dzCBPrSDIhg1BwObl3w&usqp=CAU');
+}
+
+.bg-\[url\(\'https\:\/\/flagicons\.lipis\.dev\/flags\/4x3\/ar\.svg\'\)\] {
+  background-image: url('https://flagicons.lipis.dev/flags/4x3/ar.svg');
+}
+
+.bg-\[url\(\'https\:\/\/flagicons\.lipis\.dev\/flags\/4x3\/us\.svg\'\)\] {
+  background-image: url('https://flagicons.lipis.dev/flags/4x3/us.svg');
 }
 
 .bg-\[url\(\'https\:\/\/img\.freepik\.com\/foto-gratis\/arco-iris-al-final-paisaje-carretera_23-2151596720\.jpg\?size\=626\&ext\=jpg\&ga\=GA1\.1\.1244375472\.1717090889\&semt\=ais_hybrid\'\)\] {
@@ -1083,14 +1088,6 @@ video {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
 
-.bg-\[url\(\'https\:\/\/flagicons\.lipis\.dev\/flags\/4x3\/ar\.svg\'\)\] {
-  background-image: url('https://flagicons.lipis.dev/flags/4x3/ar.svg');
-}
-
-.bg-\[url\(\'https\:\/\/flagicons\.lipis\.dev\/flags\/4x3\/us\.svg\'\)\] {
-  background-image: url('https://flagicons.lipis.dev/flags/4x3/us.svg');
-}
-
 .from-pink-500 {
   --tw-gradient-from: #ec4899 var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(236 72 153 / 0) var(--tw-gradient-to-position);
@@ -1112,6 +1109,10 @@ video {
 
 .bg-center {
   background-position: center;
+}
+
+.p-1 {
+  padding: 0.25rem;
 }
 
 .p-2 {
@@ -1278,6 +1279,18 @@ video {
 .contrast-100 {
   --tw-contrast: contrast(1);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.transition {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.duration-1000 {
+  transition-duration: 1000ms;
 }
 
 .ease-in-out {
@@ -1551,10 +1564,20 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.dark\:transition-all:is(.dark *) {
-  transition-property: all;
+.dark\:transition:is(.dark *) {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
+}
+
+.dark\:duration-1000:is(.dark *) {
+  transition-duration: 1000ms;
+}
+
+.dark\:ease-in-out:is(.dark *) {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media (min-width: 390px) {
