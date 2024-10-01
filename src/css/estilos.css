@@ -64,6 +64,62 @@ input {
     }
 }
 
+body {
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.label-languaje {
+    width: 70px;
+    height: 35px;
+    position: relative;
+    display: block;
+    background-image: url(https://flagicons.lipis.dev/flags/4x3/ar.svg);
+    background-size: contain;
+    background-position: right;
+    border-radius: 50px;
+    box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4), inset 0px -5px 15px rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.label-languaje::after {
+    content: '';
+    text-align: center;
+    width: 40px;
+    height: 35px;
+    position: absolute;
+    left: -1px;
+    background: linear-gradient(180deg, #5f89ae, #fff, #5f89ae);
+    content: 'ES';
+    display: grid;
+    align-items: center;
+    color: #000;
+    font-weight: 700;
+    border-radius: 50%;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.input-languaje {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+    &:checked + label {
+        background-image: url('https://flagicons.lipis.dev/flags/4x3/us.svg');
+        background-size: cover;
+        background-position: center;
+        &:after {
+            left: 72px;
+            transform: translateX(-100%);
+            background: linear-gradient(180deg, #c05056, #fff, #c05056);
+            content: 'EN';
+        }
+    }
+}
+
 /* label {
     width: 90px;
     height: 35px;
