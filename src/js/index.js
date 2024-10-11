@@ -1,7 +1,125 @@
+//ENLACE AL DOM DARKMODE
+const containerDarkMode = document.querySelector('.containerDarkMode');
 const darkModeInput = document.querySelector('#darkMode');
 const labelDarkMode = document.querySelector('#label_darkMode');
-const darkie = 'dark';
 
+//ENLACE AL DOM LENGUAJE
+const containerLeguaje = document.querySelector('.container-lenguajes');
+const lenguajeInput = document.querySelector('#lenguaje');
+const lenguajeLabel = document.querySelector('#label-lenguaje');
+const tituloPrincipal = document.querySelector('#tituloPrincipal');
+const h2Index = document.querySelector('#h2-index');
+const buttonContacto = document.querySelector('#btnContacto');
+const buttonResponsive = document.querySelector('#btnResposive');
+const pFooter = document.querySelector('#footerP');
+
+//ENLACE AL DOM ERROR LENGUAJE
+const body = document.querySelector('body');
+const URL = './assets/json/en.json';
+let isCheckedLenguaje = lenguajeInput.checked;
+//VARIABLES GLOBALES Y TEMPLATE LITERALS DE ERRORES
+const darkie = 'dark';
+const divError = `<div class="div-error flex flex-col pb-3">
+            <p class="text-center">
+                <img class="h-[30px]" src="https://github.com/ColoSoad/ProyectoFinal-Miranda-Joel/blob/master/img/error.png?raw=true" alt="Foto error">
+            </p>
+            <h3 class="font-semibold h-[30px] text-center tablet:mb-4 sm:text-left sm:pt-0 sm:pl-5">No se ha podido cargar el modo dark.</h3>
+            <h4 class="font-semibold text-center h-[28px] pt-10 sm:pt-0 sm:pl-5">Intenta nuevamente en unos instantes...</h4>
+        </div>`;
+
+const divError2 = `<div class="div-error2 flex flex-col">
+             <p class="">
+                 <img class="h-[30px]" src="https://github.com/ColoSoad/ProyectoFinal-Miranda-Joel/blob/master/img/error.png?raw=true" alt="Foto error">
+             </p>
+             <h3 class="font-semibold h-[30px] mb-10 tablet:mb-4 text-center pl-2">No se ha podido cargar multi-lenguaje.</h3>
+             <h4 class="font-semibold h-[28px] text-center">Intenta nuevamente en unos instantes...</h4>
+         </div>`;
+
+const divError3 = `<body class="flex justify-center items-center">
+    <div>
+        <img class="h-[30px] block mx-auto" src="https://github.com/ColoSoad/ProyectoFinal-Miranda-Joel/blob/master/img/error.png?raw=true" alt="Foto error">
+        <p class="text-center">
+            ERROR AL INTENTAR TRAER INFORMACION DEL LENGUAJE SELECCIONADO
+        </p>
+        <P class="text-center text-red-600 font-bold">
+            POR FAVOR RECARGUE LA PAGINA...
+        </P>
+    </div>
+    
+</body>`;
+
+//FUNCIONALIDADES
+
+//ERROR
+// Funciones para retornar error
+function retornarError() {
+    return divError;
+}
+function retornarError2() {
+    return divError2;
+}
+
+function retornarError3() {
+    return divError3;
+}
+
+//LENGUAJE
+// Función para obtener el archivo JSON y cambiar el texto
+async function obtener() {
+    try {
+        const respuesta = await fetch(URL); // Esperar el resultado de la llamada a fetch
+        if (!respuesta.ok) {
+            throw new Error('No se pudo obtener la información solicitada. (' + respuesta.status + ')');
+        }
+        const data = await respuesta.json(); // Esperar la conversión a JSON
+        cambiar(data); // Cambiar el idioma con los datos obtenidos
+    } catch (error) {
+        retornarError3(); // Manejo de errores
+    }
+}
+// Función para guardar el estado de checkbox lenguaje
+function guardarInfoDeLenguaje() {
+    const infoLeng = {
+        isCheckedLenguaje: lenguajeInput.checked,
+    };
+    localStorage.setItem('infoLeng', JSON.stringify(infoLeng));
+}
+// Función para cargar el estado de checkbox lenguaje desde localStorage
+function cargarEstadoDeLenguaje() {
+    const savedState = JSON.parse(localStorage.getItem('infoLeng')); // Obtener el objeto guardado
+    if (savedState !== null) {
+        lenguajeInput.checked = savedState.isCheckedLenguaje; // Actualizar el estado del checkbox
+    }
+}
+// Función para cambiar el idioma del párrafo
+function cambiar(data) {
+    if (lenguajeInput.checked) {
+        // Cambiar al idioma del JSON
+        tituloPrincipal.textContent = data.index.tituloPrincipal;
+        h2Index.textContent = data.index.h2index;
+        buttonContacto.textContent = data.index.btnContacto;
+        buttonResponsive.textContent = data.index.btnResponsive;
+        pFooter.textContent = data.index.footer;
+    } else {
+        // Cambiar de nuevo al español
+        tituloPrincipal.textContent = 'Hola mundo!';
+        h2Index.textContent = 'Esta es mi página para practicar y aprender!';
+        buttonContacto.textContent = 'CONTACTO';
+        buttonResponsive.textContent = 'DISEÑO RESPONSIVO';
+        pFooter.textContent = 'Todos los derechos reservados.';
+    }
+}
+// Escuchar cambios en el checkbox
+lenguajeInput.addEventListener('change', () => {
+    isCheckedLenguaje = lenguajeInput.checked; // Actualizar variable
+    guardarInfoDeLenguaje(); // Guardar en localStorage cada vez que cambia
+    obtener(); // Cambiar el idioma al cambiar el checkbox
+});
+// Llamar a la función para cargar el estado al iniciar la página
+cargarEstadoDeLenguaje();
+obtener(); // Llamamos obtener inicialmente para ajustar el texto según el estado actual del checkbox
+
+//DARKMODE
 // Función para guardar el estado de dark mode y el valor del checkbox en localStorage
 function guardarInfoDeDarkMode(darkie, isChecked) {
     const infoDark = {
@@ -25,6 +143,9 @@ function cargarInfoDeDarkMode() {
             darkModeInput.checked = false;
             labelDarkMode.innerHTML = `<svg class="moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M223.5 32C100 32 0 132.3 0 256S100 480 223.5 480c60.6 0 115.5-24.2 155.8-63.4c5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6c-96.9 0-175.5-78.8-175.5-176c0-65.8 36-123.1 89.3-153.3c6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"/></svg>`;
         }
+    } else {
+        containerDarkMode.innerHTML = retornarError();
+        guardarInfoDeDarkMode(darkie, darkModeInput.checked);
     }
 }
 

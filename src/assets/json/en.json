@@ -1,6 +1,9 @@
 {
-    "profile": {
-        "role": "desarrolador",
-        "description": "asdassdasda"
+    "index": {
+        "tituloPrincipal": "Hello World!",
+        "h2index": "This is my page to practice and learn!",
+        "btnContacto": "CONTACT",
+        "btnResponsive": "RESPONSIVE DESIGN",
+        "footer": "All rights reserved."
     }
 }

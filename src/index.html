@@ -10,15 +10,16 @@
     <script defer src="./js/index.js"></script>
     <title>Tailwind - install</title>
 </head>
+
 <body class="transition duration-1000 dark:ease-in-out dark:transition dark:duration-1000 ease-in-out dark:bg-black">
-    <header class="mt-10 flex justify-center w-screen">
+    <header class="mt-10 mb-10 flex justify-center w-screen">
         <div class="container-lenguajes mt-0 ml-2">
             <input type="checkbox" id="lenguaje" class="input-languaje" />
             <label for="lenguaje" id="label_languaje" class="label-languaje"></label>
         </div>
-        <div class="flex justify-center pt-20"></div>
-            <span class="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 text-center text-5xl mt-10">
-                Hello world!
+        <div class="flex justify-center pt-20">
+            <span id="tituloPrincipal" class="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 text-center text-5xl mt-10">
+                Hola mundo!
             </span>
         </div>
         <div class="containerDarkMode mt-0 mr-2">
@@ -33,7 +34,7 @@
 
     <main>
         <div class="flex place-content-center items-center flex-wrap gap-4">
-            <h2 class="text- 3xl  w-40 flex items-center font-bold dark:text-slate-300">
+            <h2 id="h2-index" class="text- 3xl  w-40 flex items-center font-bold dark:text-slate-300">
                 Esta es mi página para practicar y aprender!
             </h2>
             <div class="bg-[url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeKPw4CK4jcH7udsFHZdiB3iIOuI3fUCsxUZosXy4Y1yd25NA-dzCBPrSDIhg1BwObl3w&usqp=CAU')] bg-cover bg-center p-3 rounded-full w-40 h-40 flex items-center cursor-pointer brightness-100 contrast-100">
@@ -43,25 +44,23 @@
             </div>
         </div>
         <div class=" mt-10 pb-4 flex justify-center">
-            <a href="./pages/contacto.html" class="text- 5xl text-center text-slate-300 my-8 bg-slate-500 p-3 rounded-md w-48 mx-auto block hover:bg-slate-600 border-slate-600 border-2">
+            <a href="./pages/contacto.html" id="btnContacto" class="text- 5xl text-center text-slate-300 my-8 bg-slate-500 p-3 rounded-md w-48 mx-auto block hover:bg-slate-600 border-slate-600 border-2">
                 CONTACTO
             </a>
         </div>    
         <div class="pb-4 flex justify-center ">
-            <a href="./pages/responsive.html" class="text- 5xl text-center text-slate-300 my-8 bg-slate-500 p-3 rounded-md w-48 mx-auto block hover:bg-slate-600 border-slate-600 border-2">DISEÑO RESPONSIVO
+            <a href="./pages/responsive.html" id="btnResposive" class="text- 5xl text-center text-slate-300 my-8 bg-slate-500 p-3 rounded-md w-48 mx-auto block hover:bg-slate-600 border-slate-600 border-2">DISEÑO RESPONSIVO
             </a>
         </div>
         <!-- <div class="pb-4 flex justify-center ">
-            <a href="./pages/prueba.html" class="text- 5xl text-center text-slate-300 my-8 bg-slate-500 p-3 rounded-md w-48 mx-auto block hover:bg-slate-600 border-slate-600 border-2">DARK SWITCH
-                RESPONSIVE DESIGN
-            </a>
+            <a href="./pages/prueba.html" class="text- 5xl text-center text-slate-300 my-8 bg-slate-500 p-3 rounded-md w-48 mx-auto block hover:bg-slate-600 border-slate-600 border-2">PRUEBA</a>
         </div>           -->
         
     </main>
     <footer>
         <div class="text-center py-10">
             <p class="font-semi-bold dark:text-slate-300">© 2024 TAILWINDCSS PRACTICE</p>
-            <p class="font-semi-bold dark:text-slate-300">Todos los derechos reservados.</p>
+            <p id="footerP" class="font-semi-bold dark:text-slate-300">Todos los derechos reservados.</p>
             <ul class="flex justify-center flex-wrap gap-5 pt-2 dark:text-white">
                 <li class="w-10 h-10 flex justify-center bg-black items-center dark:bg-slate-200 shadow-xl text-3xl text-azulFb rounded-lg">
                   <a href="https://www.facebook.com/colo.soad.3/" target="_blank" class="iconos-a">
