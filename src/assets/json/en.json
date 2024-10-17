@@ -1,9 +1,31 @@
-{
-    "index": {
-        "tituloPrincipal": "Hello World!",
-        "h2index": "This is my page to practice and learn!",
-        "btnContacto": "CONTACT",
-        "btnResponsive": "RESPONSIVE DESIGN",
-        "footer": "All rights reserved."
+[
+    {
+        "index": {
+            "tituloPrincipal": "Hello World!",
+            "h2index": "This is my page to practice and learn!",
+            "btnContacto": "CONTACT",
+            "btnResponsive": "RESPONSIVE DESIGN",
+            "footer": "All rights reserved."
+        },
+        "contacto": {
+            "tituloPrincipalContacto": "EXAMPLES OF PSEUDO-CLASSES",
+            "buttonClick": "Click Here!",
+            "inputClick": "Name",
+            "seleccionarArchivo": "Select File",
+            "inputNombre": "Name",
+            "inputCorreo": "email",
+            "inputContraseña": "Password",
+            "buttonIngresar": "LOGIN"
+        },
+        "responsivo": {
+            "tituloPrincipalDiseño": "Responsive Design",
+            "buttonClick": "Click Here!",
+            "inputClick": "Name",
+            "seleccionarArchivo": "Select File",
+            "inputNombre": "Name",
+            "inputCorreo": "email",
+            "inputContraseña": "Password",
+            "buttonIngresar": "LOGIN"
+        }
     }
-}
+]
