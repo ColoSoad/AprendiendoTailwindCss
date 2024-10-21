@@ -19,13 +19,12 @@
         },
         "responsivo": {
             "tituloPrincipalDiseño": "Responsive Design",
-            "buttonClick": "Click Here!",
-            "inputClick": "Name",
-            "seleccionarArchivo": "Select File",
-            "inputNombre": "Name",
-            "inputCorreo": "email",
-            "inputContraseña": "Password",
-            "buttonIngresar": "LOGIN"
+            "h2Responsive": "Learn responsive with TailwindCss",
+            "pResponsive": "In this section of the page, we will learn responsive design with TailwindCSS",
+            "wallBasis": "Wall using the 'BASIS' class",
+            "collageBasis": "Collage using the 'BASIS' class",
+            "layoutGrid": "HTML layout with 'GRID'",
+            "collageGrid": "Collage with 'GRID' (col/row span)"
         }
     }
 ]

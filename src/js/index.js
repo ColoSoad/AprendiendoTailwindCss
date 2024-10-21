@@ -42,7 +42,7 @@ const divError3 = `<body class="flex justify-center items-center">
             ERROR AL INTENTAR TRAER INFORMACION DEL LENGUAJE SELECCIONADO
         </p>
         <P class="text-center text-red-600 font-bold">
-            POR FAVOR RECARGUE LA PAGINA...
+            POR FAVOR RECARGAR LA PAGINA...
         </P>
     </div>
     

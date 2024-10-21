@@ -1,5 +1,11 @@
 const pFooter = document.querySelector('#footerP');
-
+const tituloPrincipalDiseño = document.querySelector('#tituloPrincipalDiseño');
+const h2Responsive = document.querySelector('#h2Responsive');
+const pResponsive = document.querySelector('#pResponsive');
+const wallBasis = document.querySelector('#wallBasis');
+const collageBasis = document.querySelector('#collageBasis');
+const layoutGrid = document.querySelector('#layoutGrid');
+const collageGrid = document.querySelector('#collageGrid');
 const URL = '../assets/json/en.json';
 
 // Función para obtener el archivo JSON y cambiar el texto
@@ -21,8 +27,22 @@ async function obtenerJson(checker) {
 function cambiar(data, checker) {
     if (checker) {
         pFooter.textContent = data[0].index.footer;
+        tituloPrincipalDiseño.textContent = data[0].responsivo.tituloPrincipalDiseño;
+        h2Responsive.textContent = data[0].responsivo.h2Responsive;
+        pResponsive.textContent = data[0].responsivo.pResponsive;
+        wallBasis.textContent = data[0].responsivo.wallBasis;
+        collageBasis.textContent = data[0].responsivo.collageBasis;
+        layoutGrid.textContent = data[0].responsivo.layoutGrid;
+        collageGrid.textContent = data[0].responsivo.collageGrid;
     } else {
         pFooter.textContent;
+        tituloPrincipalDiseño.textContent;
+        h2Responsive.textContent;
+        pResponsive.textContent;
+        wallBasis.textContent;
+        collageBasis.textContent;
+        layoutGrid.textContent;
+        collageGrid.textContent;
     }
 }
 
