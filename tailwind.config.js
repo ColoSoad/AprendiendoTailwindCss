@@ -31,10 +31,15 @@ module.exports = {
                 150: '600px',
                 200: '800px',
             },
+            height: {
+                calc: 'calc(100vh - 80px)',
+            },
             screens: {
                 smartphone: '390px',
                 smartphoneRotate: '500px',
+                navbarHidden: '535px',
                 tablet: '640px',
+                tabletXL: '900px',
                 fhd: '1280px',
                 dosK: '1440px',
             },
