@@ -1,46 +1,69 @@
 <!DOCTYPE html>
-<html lang="es" class="">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="../output.css" rel="stylesheet">
-        <link href="../css/prueba.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="icon" type="icono" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeKPw4CK4jcH7udsFHZdiB3iIOuI3fUCsxUZosXy4Y1yd25NA-dzCBPrSDIhg1BwObl3w&usqp=CAU" />
-        <script defer src="../js/prueba.js"></script>
-        <title>NAVBAR</title>
-    </head>
-    <body class="bg-slate-600 dark:bg-black box-border p-0 m-0 transition duration-5000 dark:ease-in-out dark:transition dark:duration-1000 ease-in-out scroll-smooth">
-        <header>
-            <nav class="h-20 w-full bg-[#2A3A47]">
-                <input type="checkbox" id="burguer" class="hidden">
-                <label for="burguer" class="navbarHidden:hidden">
-                    <i class="fa-solid fa-bars text-4xl absolute left-[20px] cursor-pointer top-5 text-[#161D2D]"></i>
-                </label>
-                <a href="../index.html" class="">
-                    <div class="bg-[url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeKPw4CK4jcH7udsFHZdiB3iIOuI3fUCsxUZosXy4Y1yd25NA-dzCBPrSDIhg1BwObl3w&usqp=CAU')] bg-cover bg-center rounded-full w-10 h-10 cursor-pointer brightness-100 contrast-100 absolute top-5 right-[24px] tabletXL:right-[32px]">                   
-                    </div>
-                </a> 
-                <ul class="fixed w-full h-screen bg-[#2A3A47] top-20 -left-full navbarHidden:static navbarHidden:w-full navbarHidden:h-20 navbarHidden:top-0 navbarHidden:float-right navbarHidden:pl-6 tabletXL:pl-8 navbarHidden:bg-[#2A3A47] navbarHidden:block font-semibold text-center  navbarHidden:text-left transition-all duration-700 ease-in-out">
-                
-                    <li class="navbarHidden:inline-block leading-[80px] navbarHidden:mt-0 mt-[50px] mr-0 tablet:mr-4">
-                        <a href="#" class="navbarHidden:bg-slate-600 navbarHidden:p-2 navbarHidden:rounded-md hover:text-white fhd:font-semibold font text-[14px] tablet:text[18px]">
-                            INICIO
-                        </a>
-                    </li>
-                    <li class="navbarHidden:inline-block leading-[80px] mr-0 tablet:mr-4 navbarHidden:mt-0 mt-[50px]">
-                        <a href="#" class="hover:text-white navbarHidden:hover:bg-slate-500 navbarHidden:p-2 navbarHidden:rounded-md fhd:font-semibold transition duration-700 ease-in-out">
-                            REPOSITORIO GITHUB
-                        </a>
-                    </li>
-                    <li class="navbarHidden:inline-block leading-[80px] navbarHidden:mt-0 mt-[50px]">
-                        <a href="#" class="hover:text-white navbarHidden:hover:bg-slate-500 p-2 rounded-md fhd:font-semibold transition duration-700 ease-in-out">
-                            DESCARGA MI CV
-                        </a>
-                    </li>
-                </ul>
-            </nav>        
-        </header>
-        <section class=" h-calc bg-[url('https://images3.alphacoders.com/130/1308690.jpg')] bg-no-repeat bg-cover bg-center"></section>
-    </body>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="icono" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeKPw4CK4jcH7udsFHZdiB3iIOuI3fUCsxUZosXy4Y1yd25NA-dzCBPrSDIhg1BwObl3w&usqp=CAU" />
+    <script defer src="../js/preferences3.js"></script>
+    <title>Tailwind - NAVBARS</title>
+</head>
+<body class="bg-fucsiaCool dark:bg-black">
+    <a class="
+        fixed
+        left-4
+        top-4
+        text-center
+        leading-10
+        text-2xl
+        rounded-full 
+        bg-pink-700
+        w-10
+        h-10
+        hover:bg-slate-600 
+        border-slate-600 border-2
+        "
+        href="../index.html">
+            <i class="fa-solid fa-arrow-left"></i>
+    </a> 
+    <header class="p-3 smartphone:mt-20 smartphoneRotate:mt-20">
+        <p id="titulo-navbars" class="text-center smartphone:text-2xl smartphoneRotate:text-5xl dark:text-slate-400">
+            EJEMPLOS DE NAVBARS
+        </p>
+    </header>                   
+    <main >
+        <div class="pb-4 flex justify-center ">
+            <a href="./navbar1.html" id="btnResposive" class="text- 5xl text-center text-slate-300 my-8 bg-slate-500 p-3 rounded-md w-48 mx-auto block hover:bg-slate-600 border-slate-600 border-2">
+                NAVBAR 1
+            </a>
+        </div>
+        <div class="pb-4 flex justify-center ">
+            <a href="./navbar2.html" id="btnResposive" class="text- 5xl text-center text-slate-300 my-8 bg-slate-500 p-3 rounded-md w-48 mx-auto block hover:bg-slate-600 border-slate-600 border-2">
+                NAVBAR 2
+            </a>
+        </div>
+    </main>
+    <footer>
+        <div class="text-center py-10">
+            <p class="font-semi-bold dark:text-slate-300">© 2024 TAILWINDCSS PRACTICE</p>
+            <p id="footerP" class="font-semi-bold dark:text-slate-300">Todos los derechos reservados.</p>
+            <ul class="flex justify-center flex-wrap gap-5 pt-2 dark:text-white">
+                <li class="w-10 h-10 flex justify-center bg-black items-center dark:bg-slate-200 shadow-xl text-3xl text-azulFb rounded-lg">
+                  <a href="https://www.facebook.com/colo.soad.3/" target="_blank" class="iconos-a">
+                    <i class="fab fa-facebook-f icon p-2"></i>    </a>
+                </li>
+                <li class="w-10 h-10 flex justify-center items-center bg-black dark:bg-white shadow-xl text-3xl mx-9 rounded-lg text-insta">
+                    <a href="https://www.instagram.com/colosoad/" target="_blank" class="iconos-a">
+                    <i class="fab fa-instagram icon p-2"></i>
+                    </a>
+                </li>
+                <li class="w-10 h-10 flex justify-center items-center bg-linkaBg shadow-xl text-3xl rounded-lg text-linka">
+                  <a href="#"><i class="fab fa-linkedin-in icon p-2"></i></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    
+</body>
 </html>

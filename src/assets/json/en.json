@@ -25,6 +25,9 @@
             "collageBasis": "Collage using the 'BASIS' class",
             "layoutGrid": "HTML layout with 'GRID'",
             "collageGrid": "Collage with 'GRID' (col/row span)"
+        },
+        "navbars": {
+            "tituloPrincipalNavbars": "EXAMPLES OF NAVBARS"
         }
     }
 ]

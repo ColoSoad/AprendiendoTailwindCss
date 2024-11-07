@@ -64,7 +64,7 @@ function recuperarInfoDePreferences() {
 
 // evento para input correo y contraseña
 inputCorreo.addEventListener('input', function () {
-    // Usamos un operador ternario para habilitar/deshabilitar el input de contraseña
+    // Uso de un operador ternario para habilitar/deshabilitar el input de contraseña
     inputContraseña.disabled = inputCorreo.value === '' ? true : false;
 });
 
