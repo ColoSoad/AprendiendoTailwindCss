@@ -6,16 +6,17 @@ body {
 button {
     height: 40px;
     width: 80px;
-    margin: 0 0 0 2px;
+    /* margin: 0 0 0 2px; */
 }
 header {
     background-color: #2a3a47;
     height: 80px;
 }
 .modal::backdrop {
+    backdrop-filter: blur(5px);
     height: 100%;
     margin-top: 0px;
-    background-color: rgba(51, 48, 48, 0.9);
+    background-color: rgba(51, 48, 48, 0.5);
     height: 100%;
 }
 .modal {
@@ -24,10 +25,6 @@ header {
     list-style-type: none;
     text-align: center;
     color: #75a8d1;
-}
-.btnCloseModal {
-    position: absolute;
-    top: -20px;
 }
 
 /* From Uiverse.io by prakashdc */
@@ -68,4 +65,7 @@ header {
 .hamburger input:hover + svg .line-top-bottom {
     stroke-dasharray: 20 300;
     stroke-dashoffset: -32.42;
+}
+.modal a {
+    outline: none; /* Elimina el borde */
 }
