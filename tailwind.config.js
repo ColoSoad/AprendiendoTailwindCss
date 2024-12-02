@@ -43,7 +43,20 @@ module.exports = {
                 fhd: '1280px',
                 dosK: '1440px',
             },
+            backdropBlur: {
+                back: '5px',
+            },
         },
     },
-    plugins: [],
+    plugins: [
+        function ({ addUtilities }) {
+            addUtilities({
+                '.stroke-dasharray-12-63': { 'stroke-dasharray': '12 63' },
+                '.stroke-dasharray-20-300': { 'stroke-dasharray': '20 300' },
+                '.stroke-dashoffset--32.42': { 'stroke-dashoffset': '-32.42' },
+                '.stroke-linecap': { 'stroke-linecap': 'round' },
+                '.stroke-linejoin': { 'stroke-linejoin': 'round' },
+            });
+        },
+    ],
 };

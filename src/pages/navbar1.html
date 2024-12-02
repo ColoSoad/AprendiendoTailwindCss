@@ -14,19 +14,15 @@
             <nav class="h-20 w-full bg-[#2A3A47]">
                 <div class="container">
                     <input type="checkbox" id="burguer" class="hidden peer">
-                    <!-- <label for="burguer" class="cursor-pointer">
-                       
-                        <i class="fa-solid fa-bars text-4xl absolute left-5 top-5 text-[#161D2D] cursor-pointer transition-all duration-500 ease-in-out peer-checked:hidden"></i>
-                   
-                        <i class="fa-solid fa-close text-4xl absolute left-5 top-5 text-[#161D2D] cursor-pointer transition-all duration-500 ease-in-out hidden peer-checked:block"></i>
-                    </label> -->
-                    
                     <label for="burguer" class="peer-checked:hidden navbarHidden:hidden transition-all duration-1000 ease-in-out">
-                        <i class="fa-solid fa-bars text-4xl absolute left-[20px] cursor-pointer top-5 text-[#161D2D]"></i>
-                        
+                        <i class="absolute left-[20px] cursor-pointer top-5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" style="fill: #75a8d1"><path d="M4 11h12v2H4zm0-5h16v2H4zm0 12h7.235v-2H4z"></path></svg>
+                        </i>
                     </label> 
                     <label for="burguer" class="hidden peer-checked:block navbarHidden:hidden transition-all duration-1000 ease-in-out">
-                        <i class="fa-solid fa-close text-4xl absolute left-[20px] cursor-pointer top-5 text-[#161D2D]"></i>
+                        <i class="absolute left-[20px] cursor-pointer top-5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 24 24" style="fill: #75a8d1"><path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"></path></svg>
+                        </i>
                     </label>
                     <a href="./navbar.html" class="">
                         <div class="bg-[url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeKPw4CK4jcH7udsFHZdiB3iIOuI3fUCsxUZosXy4Y1yd25NA-dzCBPrSDIhg1BwObl3w&usqp=CAU')] bg-cover bg-center rounded-full w-10 h-10 cursor-pointer brightness-100 contrast-100 absolute top-5 right-[24px] tabletXL:right-[32px]">                   
@@ -35,7 +31,7 @@
                     <ul class="fixed w-full h-screen bg-[#2A3A47] top-20 -left-full navbarHidden:static navbarHidden:w-full navbarHidden:h-20 navbarHidden:top-0 navbarHidden:float-right navbarHidden:pl-6 tabletXL:pl-8 navbarHidden:bg-[#2A3A47] navbarHidden:block font-semibold text-center  navbarHidden:text-left transition-all duration-700 ease-in-out peer-checked:left-0">
                 
                         <li class="navbarHidden:inline-block leading-[80px] navbarHidden:mt-0 mt-[50px] mr-0 tablet:mr-4">
-                            <a href="#" class="navbarHidden:bg-slate-600 navbarHidden:p-2 navbarHidden:rounded-md hover:text-white fhd:font-semibold font text-[14px] tablet:text[18px]">
+                            <a href="#" class="navbarHidden:bg-slate-500 navbarHidden:p-2 navbarHidden:rounded-md hover:text-white fhd:font-semibold font text-[16px] tablet:text[18px]">
                             INICIO
                             </a>
                         </li>
@@ -53,6 +49,6 @@
                 </div>
             </nav>        
         </header>
-        <section class=" h-calc bg-[url('https://images3.alphacoders.com/130/1308690.jpg')] bg-no-repeat bg-cover bg-center"></section>
+        <section class=" h-calc bg-[url('https://images3.alphacoders.com/130/1308690.jpg')] bg-no-repeat bg-cover bg-center navbarHidden:bg-top navbarHidden:h-screen"></section>
     </body>
 </html>
