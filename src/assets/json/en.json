@@ -5,6 +5,7 @@
             "h2index": "This is my page to practice and learn!",
             "btnContacto": "CONTACT",
             "btnResponsive": "RESPONSIVE DESIGN",
+            "btnNav": "NAVBARS",
             "footer": "All rights reserved."
         },
         "contacto": {
@@ -27,7 +28,9 @@
             "collageGrid": "Collage with 'GRID' (col/row span)"
         },
         "navbars": {
-            "tituloPrincipalNavbars": "EXAMPLES OF NAVBARS"
+            "tituloPrincipalNavbars": "EXAMPLES OF NAVBARS",
+            "nav1": "NAVBAR 1",
+            "nav2": "NAVBAR 2"
         }
     }
 ]

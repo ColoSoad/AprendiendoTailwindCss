@@ -11,6 +11,7 @@ const tituloPrincipal = document.querySelector('#tituloPrincipal');
 const h2Index = document.querySelector('#h2-index');
 const buttonContacto = document.querySelector('#btnContacto');
 const buttonResponsive = document.querySelector('#btnResposive');
+const buttonNav = document.querySelector('#btnNav');
 const pFooter = document.querySelector('#footerP');
 
 //ENLACE AL DOM ERROR LENGUAJE
@@ -103,6 +104,7 @@ function cambiar(data) {
         h2Index.textContent = data[0].index.h2index;
         buttonContacto.textContent = data[0].index.btnContacto;
         buttonResponsive.textContent = data[0].index.btnResponsive;
+        buttonNav.textContent = data[0].index.btnNav;
         pFooter.textContent = data[0].index.footer;
     } else {
         // Cambiar de nuevo al español
@@ -110,6 +112,7 @@ function cambiar(data) {
         h2Index.textContent = 'Esta es mi página para practicar y aprender!';
         buttonContacto.textContent = 'CONTACTO';
         buttonResponsive.textContent = 'DISEÑO RESPONSIVO';
+        buttonNav.textContent = 'NAVEGACIÓN';
         pFooter.textContent = 'Todos los derechos reservados.';
     }
 }

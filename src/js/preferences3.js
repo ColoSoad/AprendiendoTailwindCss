@@ -1,5 +1,7 @@
 const pFooter = document.querySelector('#footerP');
 const tituloPrincipalNavbars = document.querySelector('#titulo-navbars');
+const nav1 = document.querySelector('#nav1');
+const nav2 = document.querySelector('#nav2');
 
 const URL = '../assets/json/en.json';
 
@@ -23,6 +25,8 @@ function cambiar(data, checker) {
     if (checker) {
         pFooter.textContent = data[0].index.footer;
         tituloPrincipalNavbars.textContent = data[0].navbars.tituloPrincipalNavbars;
+        nav1.textContent = data[0].navbars.nav1;
+        nav2.textContent = data[0].navbars.nav2;
     } else {
         pFooter.textContent;
         tituloPrincipalNavbars.textContent;
