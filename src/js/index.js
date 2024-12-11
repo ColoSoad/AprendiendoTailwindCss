@@ -2,6 +2,11 @@
 const containerDarkMode = document.querySelector('.containerDarkMode');
 const darkModeInput = document.querySelector('#darkMode');
 const labelDarkMode = document.querySelector('#label_darkMode');
+const divTail = document.querySelector('#divTail');
+const inputBurger = document.querySelector('#burger');
+const holaMundo = document.querySelector('#tituloPrincipal');
+const mainElement = document.querySelector('#main');
+const mainNull = ``;
 
 //ENLACE AL DOM LENGUAJE
 const containerLeguaje = document.querySelector('.container-lenguajes');
@@ -19,6 +24,7 @@ const body = document.querySelector('body');
 const URL = './assets/json/en.json';
 let isCheckedLenguaje = lenguajeInput.checked;
 //VARIABLES GLOBALES Y TEMPLATE LITERALS
+const hidden = 'hidden';
 const darkie = 'dark';
 const divError = `<div class="div-error flex flex-col pb-3">
             <p class="text-center">
@@ -122,6 +128,7 @@ lenguajeInput.addEventListener('change', () => {
     guardarInfoDeLenguaje(); // Guardar en localStorage cada vez que cambia
     obtener(); // Cambiar el idioma al cambiar el checkbox
 });
+
 // Llamar a la función para cargar el estado al iniciar la página
 cargarEstadoDeLenguaje();
 obtener(); // Llamamos obtener inicialmente para ajustar el texto según el estado actual del checkbox
@@ -171,4 +178,11 @@ darkModeInput.addEventListener('change', (event) => {
 
     // Guardar el estado actual en localStorage
     guardarInfoDeDarkMode(darkie, darkModeInput.checked);
+});
+
+inputBurger.addEventListener('click', (e) => {
+    if (!inputBurger.isChecked) {
+        mainElement.classList.add(hidden);
+    } else {
+    }
 });

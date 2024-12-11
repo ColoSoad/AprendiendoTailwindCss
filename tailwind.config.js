@@ -56,6 +56,48 @@ module.exports = {
                 '.stroke-dashoffset--32.42': { 'stroke-dashoffset': '-32.42' },
                 '.stroke-linecap': { 'stroke-linecap': 'round' },
                 '.stroke-linejoin': { 'stroke-linejoin': 'round' },
+                '.text-shadow': {
+                    textShadow: `
+                        0 0 1px #c058dd,
+                        0 0 50px #f33095,
+                        0 0 0px #8b5cf6,
+                        0 0 50px #8b5cf6`,
+                },
+                '.text-shadow-cyan': {
+                    textShadow: `
+                        0 0 1px cyan,
+                        0 0 20px cyan,
+                        0 0 20px cyan,
+                        0 0 20px cyan`,
+                },
+                '.btn-shadow': {
+                    boxShadow: `
+                        0 0 0px #c058dd,
+                        0 0 50px #f33095,
+                        0 0 0px #8b5cf6,
+                        0 0 0px #8b5cf6`,
+                },
+                '.btn-shadow-white': {
+                    boxShadow: `
+                        0 0 0px #fff,
+                        0 0 50px #fff,
+                        0 0 0px #fff,
+                        0 0 0px #fff`,
+                },
+                '.btn-shadow-blue': {
+                    boxShadow: `
+                        0 0 0px #5f89ae,
+                        0 0 50px #5f89ae,
+                        0 0 0px #5f89ae,
+                        0 0 0px #5f89ae`,
+                },
+                '.btn-shadow-black': {
+                    boxShadow: `
+                        0 0 0px #000,
+                        0 0 50px #000,
+                        0 0 0px #000,
+                        0 0 0px #000`,
+                },
             });
         },
     ],

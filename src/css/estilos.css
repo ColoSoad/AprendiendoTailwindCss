@@ -6,27 +6,30 @@
     list-style: none;
 }
 .labelDark {
-    width: 90px;
-    height: 35px;
-    position: relative;
+    width: 65px;
+    height: 25px;
+    position: absolute;
+    top: -16px;
+    left: -155px;
     display: block;
     background: #ebebeb;
     border-radius: 200px;
-    box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4), inset 0px -5px 15px rgba(255, 255, 255, 0.4);
+    box-shadow: inset 0px 2px 8px rgba(0, 0, 0, 0.2), inset 0px -2px 8px rgba(255, 255, 255, 0.2);
+
     cursor: pointer;
     transition: 0.3s;
 }
 
 .labelDark::after {
     content: '';
-    width: 40px;
-    height: 35px;
+    width: 28px;
+    height: 28px;
     position: absolute;
-    top: 0px;
+    top: -2px;
     left: 0px;
     background: linear-gradient(180deg, #ffcc89, #d8860b);
     border-radius: 50%;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0.15cap 2px rgba(0, 0, 0, 0.2);
     transition: 0.3s;
 }
 svg {
@@ -37,17 +40,19 @@ svg {
 }
 
 .sun {
-    left: 4px;
+    height: 22px;
+    top: 1px;
     fill: #fff700;
     transition: 0.3s;
 }
 
 .moon {
-    height: 35px;
-    left: 55px;
+    height: 25px;
+    left: 35px;
     top: 0px;
     fill: #424040;
     transition: 0.3s;
+    transform: rotateX(0.8);
 }
 
 .inputDark {
@@ -57,7 +62,7 @@ svg {
     &:checked + label {
         background: #242424;
         &:after {
-            left: 90px;
+            left: 65px;
             transform: translateX(-100%);
             background: linear-gradient(180deg, #777, #3a3a3a);
         }
@@ -79,9 +84,10 @@ body {
 }
 
 .label-languaje {
-    width: 70px;
-    height: 35px;
-    position: relative;
+    width: 50px;
+    height: 25px;
+    position: absolute;
+    left: -75px;
     display: block;
     background-image: url(https://flagicons.lipis.dev/flags/4x3/ar.svg);
     background-size: contain;
@@ -95,9 +101,10 @@ body {
 .label-languaje::after {
     content: '';
     text-align: center;
-    width: 40px;
-    height: 35px;
+    width: 28px;
+    height: 28px;
     position: absolute;
+    top: -2px;
     left: -1px;
     background: linear-gradient(180deg, #5f89ae, #fff, #5f89ae);
     content: 'ES';
@@ -106,7 +113,7 @@ body {
     color: #000;
     font-weight: 700;
     border-radius: 50%;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0.15cap 2px rgba(0, 0, 0, 0.2);
     transition: 0.3s;
 }
 
@@ -119,10 +126,14 @@ body {
         background-size: cover;
         background-position: center;
         &:after {
-            left: 72px;
+            left: 55px;
             transform: translateX(-100%);
             background: linear-gradient(180deg, #c05056, #fff, #c05056);
             content: 'EN';
         }
     }
+}
+.economo {
+    height: 50px;
+    width: 50px;
 }
