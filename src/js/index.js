@@ -2,11 +2,11 @@
 const containerDarkMode = document.querySelector('.containerDarkMode');
 const darkModeInput = document.querySelector('#darkMode');
 const labelDarkMode = document.querySelector('#label_darkMode');
-const divTail = document.querySelector('#divTail');
+// const divTail = document.querySelector('#divTail');
 const inputBurger = document.querySelector('#burger');
-const holaMundo = document.querySelector('#tituloPrincipal');
+// const holaMundo = document.querySelector('#tituloPrincipal');
 const mainElement = document.querySelector('#main');
-const mainNull = ``;
+// const mainNull = ``;
 
 //ENLACE AL DOM LENGUAJE
 const containerLeguaje = document.querySelector('.container-lenguajes');
@@ -122,6 +122,7 @@ function cambiar(data) {
         pFooter.textContent = 'Todos los derechos reservados.';
     }
 }
+
 // Escuchar cambios en el checkbox
 lenguajeInput.addEventListener('change', () => {
     isCheckedLenguaje = lenguajeInput.checked; // Actualizar variable
@@ -180,9 +181,10 @@ darkModeInput.addEventListener('change', (event) => {
     guardarInfoDeDarkMode(darkie, darkModeInput.checked);
 });
 
-inputBurger.addEventListener('click', (e) => {
-    if (!inputBurger.isChecked) {
-        mainElement.classList.add(hidden);
+inputBurger.addEventListener('change', () => {
+    if (inputBurger.checked) {
+        mainElement.classList.add('hidden');
     } else {
+        mainElement.classList.remove('hidden');
     }
 });
