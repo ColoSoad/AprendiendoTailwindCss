@@ -2,11 +2,11 @@
 const containerDarkMode = document.querySelector('.containerDarkMode');
 const darkModeInput = document.querySelector('#darkMode');
 const labelDarkMode = document.querySelector('#label_darkMode');
-// const divTail = document.querySelector('#divTail');
-const inputBurger = document.querySelector('#burger');
-// const holaMundo = document.querySelector('#tituloPrincipal');
-const mainElement = document.querySelector('#main');
-// const mainNull = ``;
+
+//DARKMODE NAV
+// const containerDarkModeNav = document.querySelector('.containerDarkModeNav');
+// const darkModeInputNav = document.querySelector('#darkModeNav');
+// const labelDarkModeNav = document.querySelector('#label_darkNav');
 
 //ENLACE AL DOM LENGUAJE
 const containerLeguaje = document.querySelector('.container-lenguajes');
@@ -19,10 +19,20 @@ const buttonResponsive = document.querySelector('#btnResposive');
 const buttonNav = document.querySelector('#btnNav');
 const pFooter = document.querySelector('#footerP');
 
+//LENGUAJE NAV
+const containerLeguajeNav = document.querySelector('.container-lenguajes-nav');
+const lenguajeInputNav = document.querySelector('#lenguajeNav');
+const lenguajeLabelNav = document.querySelector('#label_languaje_nav');
+
 //ENLACE AL DOM ERROR LENGUAJE
 const body = document.querySelector('body');
 const URL = './assets/json/en.json';
 let isCheckedLenguaje = lenguajeInput.checked;
+
+// ENLACE AL DOM ICONO BURGER
+const inputBurger = document.querySelector('#burger');
+const mainElement = document.querySelector('#main');
+
 //VARIABLES GLOBALES Y TEMPLATE LITERALS
 const hidden = 'hidden';
 const darkie = 'dark';
@@ -123,7 +133,7 @@ function cambiar(data) {
     }
 }
 
-// Escuchar cambios en el checkbox
+// Escuchar cambios en el checkbox lenguaje
 lenguajeInput.addEventListener('change', () => {
     isCheckedLenguaje = lenguajeInput.checked; // Actualizar variable
     guardarInfoDeLenguaje(); // Guardar en localStorage cada vez que cambia
@@ -140,6 +150,7 @@ function guardarInfoDeDarkMode(darkie, isChecked) {
     const infoDark = {
         darkie: darkie,
         isChecked: isChecked,
+        // isCheckedNav: isCheckedNav,
     };
     localStorage.setItem('infoDark', JSON.stringify(infoDark));
 }
@@ -167,19 +178,37 @@ function cargarInfoDeDarkMode() {
 // Cargar el estado de dark mode al iniciar la página
 cargarInfoDeDarkMode();
 
-// Escuchar los cambios en el checkbox
+// Escuchar los cambios en el checkbox de Dark
 darkModeInput.addEventListener('change', (event) => {
     document.documentElement.classList.toggle(darkie); // Para colocar o quitar la clase 'dark'
 
     if (darkModeInput.checked) {
         labelDarkMode.innerHTML = sun;
+        // labelDarkModeNav.innerHTML = sun;
     } else {
         labelDarkMode.innerHTML = moon;
+        // labelDarkModeNav.innerHTML = moon;
     }
 
     // Guardar el estado actual en localStorage
     guardarInfoDeDarkMode(darkie, darkModeInput.checked);
 });
+
+// Escuchar los cambios en el checkbox de DarkNav
+// darkModeInputNav.addEventListener('change', (event) => {
+//     document.documentElement.classList.toggle(darkie);
+
+//     if (darkModeInputNav.checked) {
+//         labelDarkMode.innerHTML = sun;
+//         // labelDarkModeNav.innerHTML = sun;
+//     } else {
+//         labelDarkMode.innerHTML = moon;
+//         // labelDarkModeNav.innerHTML = moon;
+//     }
+
+//     // Guardar el estado actual en localStorage
+//     guardarInfoDeDarkMode(darkie, darkModeInput.checked);
+// });
 
 inputBurger.addEventListener('change', () => {
     if (inputBurger.checked) {

@@ -13,7 +13,7 @@
 
 <body class="transition duration-1000 dark:ease-in-out dark:transition dark:duration-1000 ease-in-out dark:bg-black">
     <header class="mt-10 mb-10 flex justify-center tablet:w-screen h-1 items-center">
-        <nav class="h-20 w-full bg-[#fff] tablet:hidden dark:bg-black">
+        <!-- <nav class="h-20 w-full bg-[#fff] tablet:hidden dark:bg-black">
             <div class="container">
                 <input type="checkbox" id="burger" class="hidden peer ">
                 <label for="burger" class="peer-checked:hidden tablet:hidden transition-all duration-1000 ease-in-out">
@@ -28,16 +28,16 @@
                 </label>
                 <ul class="fixed w-full h-full bg-[#fff] dark:bg-black top-20 -left-full tablet:static tablet:hidden tablet:h-20 tablet:top-0 tablet:float-right tablet:pl-6 tabletXL:pl-8 tablet:bg-[#2A3A47] font-semibold text-center  tablet:text-left transition-all duration-700 ease-in-out peer-checked:left-0">
             
-                    <div class="containerDarkMode mt-0 absolute -top-10 right-2">
-                        <input type="checkbox" id="darkMode" class="inputDark"/>
-                        <label for="darkMode" id="label_darkMode" class="labelDark">
-                            <svg class="sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M361.5 1.2c5 2.1 8.6 6.6 9.6 11.9L391 121l107.9 19.8c5.3 1 9.8 4.6 11.9 9.6s1.5 10.7-1.6 15.2L446.9 256l62.3 90.3c3.1 4.5 3.7 10.2 1.6 15.2s-6.6 8.6-11.9 9.6L391 391 371.1 498.9c-1 5.3-4.6 9.8-9.6 11.9s-10.7 1.5-15.2-1.6L256 446.9l-90.3 62.3c-4.5 3.1-10.2 3.7-15.2 1.6s-8.6-6.6-9.6-11.9L121 391 13.1 371.1c-5.3-1-9.8-4.6-11.9-9.6s-1.5-10.7 1.6-15.2L65.1 256 2.8 165.7c-3.1-4.5-3.7-10.2-1.6-15.2s6.6-8.6 11.9-9.6L121 121 140.9 13.1c1-5.3 4.6-9.8 9.6-11.9s10.7-1.5 15.2 1.6L256 65.1 346.3 2.8c4.5-3.1 10.2-3.7 15.2-1.6zM160 256a96 96 0 1 1 192 0 96 96 0 1 1 -192 0zm224 0a128 128 0 1 0 -256 0 128 128 0 1 0 256 0z"/></svg>
-                            <svg class="moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M223.5 32C100 32 0 132.3 0 256S100 480 223.5 480c60.6 0 115.5-24.2 155.8-63.4c5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6c-96.9 0-175.5-78.8-175.5-176c0-65.8 36-123.1 89.3-153.3c6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"/></svg>
+                    <div class="containerDarkModeNav mt-0 absolute -top-10 right-2">
+                        <input type="checkbox" id="darkModeNav" class="inputDarkNav"/>
+                        <label for="darkModeNav" id="label_darkNav" class="labelDarkNav">
+                            <svg class="sun-nav" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M361.5 1.2c5 2.1 8.6 6.6 9.6 11.9L391 121l107.9 19.8c5.3 1 9.8 4.6 11.9 9.6s1.5 10.7-1.6 15.2L446.9 256l62.3 90.3c3.1 4.5 3.7 10.2 1.6 15.2s-6.6 8.6-11.9 9.6L391 391 371.1 498.9c-1 5.3-4.6 9.8-9.6 11.9s-10.7 1.5-15.2-1.6L256 446.9l-90.3 62.3c-4.5 3.1-10.2 3.7-15.2 1.6s-8.6-6.6-9.6-11.9L121 391 13.1 371.1c-5.3-1-9.8-4.6-11.9-9.6s-1.5-10.7 1.6-15.2L65.1 256 2.8 165.7c-3.1-4.5-3.7-10.2-1.6-15.2s6.6-8.6 11.9-9.6L121 121 140.9 13.1c1-5.3 4.6-9.8 9.6-11.9s10.7-1.5 15.2 1.6L256 65.1 346.3 2.8c4.5-3.1 10.2-3.7 15.2-1.6zM160 256a96 96 0 1 1 192 0 96 96 0 1 1 -192 0zm224 0a128 128 0 1 0 -256 0 128 128 0 1 0 256 0z"/></svg>
+                            <svg class="moon-nav" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M223.5 32C100 32 0 132.3 0 256S100 480 223.5 480c60.6 0 115.5-24.2 155.8-63.4c5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6c-96.9 0-175.5-78.8-175.5-176c0-65.8 36-123.1 89.3-153.3c6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"/></svg>
                         </label>
                     </div>
-                    <div class="container-lenguajes mt-0 absolute -top-20 right-2">
-                        <input type="checkbox" id="lenguaje" class="input-languaje" />
-                        <label for="lenguaje" id="label_languaje" class="label-languaje"></label>
+                    <div class="container-lenguajes-nav mt-0 absolute -top-20 right-2">
+                        <input type="checkbox" id="lenguajeNav" class="input-languaje-nav" />
+                        <label for="lenguajeNav" id="label_languaje_nav" class="label-languaje-nav"></label>
                     </div>
                     <li class="tablet:inline-block leading-[80px] tablet:mt-0 mt-[50px]">
                         <a href="#" class="dark:text-white tablet:hover:bg-slate-500 p-2 rounded-md fhd:font-semibold transition duration-700 ease-in-out">
@@ -56,25 +56,56 @@
                     </li>
                 </ul>
             </div>
-        </nav>
-        <nav class="hidden mt-10 mb-10 tablet:flex w-screen" id="navigation">
-            <!-- <div class="container-lenguajes mt-0 absolute top-0 right-2">
-                <input type="checkbox" id="lenguaje" class="input-languaje" />
-                <label for="lenguaje" id="label_languaje" class="label-languaje"></label>
-            </div>
-            
-            <div class="containerDarkMode mt-0 absolute top-10 right-2">
-                <input type="checkbox" id="darkMode" class="inputDark"/>
-                <label for="darkMode" id="label_darkMode" class="labelDark">
-                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M361.5 1.2c5 2.1 8.6 6.6 9.6 11.9L391 121l107.9 19.8c5.3 1 9.8 4.6 11.9 9.6s1.5 10.7-1.6 15.2L446.9 256l62.3 90.3c3.1 4.5 3.7 10.2 1.6 15.2s-6.6 8.6-11.9 9.6L391 391 371.1 498.9c-1 5.3-4.6 9.8-9.6 11.9s-10.7 1.5-15.2-1.6L256 446.9l-90.3 62.3c-4.5 3.1-10.2 3.7-15.2 1.6s-8.6-6.6-9.6-11.9L121 391 13.1 371.1c-5.3-1-9.8-4.6-11.9-9.6s-1.5-10.7 1.6-15.2L65.1 256 2.8 165.7c-3.1-4.5-3.7-10.2-1.6-15.2s6.6-8.6 11.9-9.6L121 121 140.9 13.1c1-5.3 4.6-9.8 9.6-11.9s10.7-1.5 15.2 1.6L256 65.1 346.3 2.8c4.5-3.1 10.2-3.7 15.2-1.6zM160 256a96 96 0 1 1 192 0 96 96 0 1 1 -192 0zm224 0a128 128 0 1 0 -256 0 128 128 0 1 0 256 0z"/></svg>
-                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M223.5 32C100 32 0 132.3 0 256S100 480 223.5 480c60.6 0 115.5-24.2 155.8-63.4c5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6c-96.9 0-175.5-78.8-175.5-176c0-65.8 36-123.1 89.3-153.3c6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"/></svg>
+        </nav> -->
+        <nav class="h-20 w-full" id="navigation">
+            <div class="container">
+                <input type="checkbox" id="burger" class="hidden peer">
+                <label for="burger" class="peer-checked:hidden tablet:hidden transition-all duration-1000 ease-in-out">
+                    <i class="absolute left-[20px] cursor-pointer top-5">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" style="fill: #8b5cf6"><path d="M4 11h12v2H4zm0-5h16v2H4zm0 12h7.235v-2H4z"></path></svg>
+                    </i>
+                </label> 
+                <label for="burger" class="hidden peer-checked:block tablet:hidden transition-all duration-1000 ease-in-out">
+                    <i class="absolute left-[20px] cursor-pointer top-5">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 24 24" style="fill: #8b5cf6"><path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"></path></svg>
+                    </i>
                 </label>
-            </div> -->
-            <div class="">
-                <a href="./index.html">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="240" height="240" viewBox="0 0 24 24" style="fill: rgba(164, 138, 247, 1)" class="h-[60px] w-[60px] ml-5 mt-2 tabletXL:h-[100px] tabletXL:w-[100px]"><path d="M18.5 9.51a4.22 4.22 0 0 1-1.91-1.34A5.77 5.77 0 0 0 12 6a4.72 4.72 0 0 0-5 4 3.23 3.23 0 0 1 3.5-1.49 4.32 4.32 0 0 1 1.91 1.35A5.77 5.77 0 0 0 17 12a4.72 4.72 0 0 0 5-4 3.2 3.2 0 0 1-3.5 1.51zm-13 4.98a4.22 4.22 0 0 1 1.91 1.34A5.77 5.77 0 0 0 12 18a4.72 4.72 0 0 0 5-4 3.23 3.23 0 0 1-3.5 1.49 4.32 4.32 0 0 1-1.91-1.35A5.8 5.8 0 0 0 7 12a4.72 4.72 0 0 0-5 4 3.2 3.2 0 0 1 3.5-1.51z"></path></svg>
+                <ul class="fixed w-full h-screen bg-[#fff] top-20 -left-full tablet:static tablet:w-full tablet:h-20 tablet:top-0 tablet:float-right tablet:pl-6 tabletXL:pl-8 tablet:bg-[#fff] tablet:block font-semibold text-center  tablet:text-left transition-all duration-700 ease-in-out peer-checked:left-0 dark:bg-black dark:ease-in-out dark:transition dark:duration-1000">
+                    <div class="container-lenguajes mt-0 absolute tablet:top-0 right-2 -top-20">
+                        <input type="checkbox" id="lenguaje" class="input-languaje" />
+                        <label for="lenguaje" id="label_languaje" class="label-languaje"></label>
+                    </div>
                     
-                </a>
+                    <div class="containerDarkMode mt-0 absolute tablet:top-10 right-2 -top-10">
+                        <input type="checkbox" id="darkMode" class="inputDark"/>
+                        <label for="darkMode" id="label_darkMode" class="labelDark">
+                            <svg class="sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M361.5 1.2c5 2.1 8.6 6.6 9.6 11.9L391 121l107.9 19.8c5.3 1 9.8 4.6 11.9 9.6s1.5 10.7-1.6 15.2L446.9 256l62.3 90.3c3.1 4.5 3.7 10.2 1.6 15.2s-6.6 8.6-11.9 9.6L391 391 371.1 498.9c-1 5.3-4.6 9.8-9.6 11.9s-10.7 1.5-15.2-1.6L256 446.9l-90.3 62.3c-4.5 3.1-10.2 3.7-15.2 1.6s-8.6-6.6-9.6-11.9L121 391 13.1 371.1c-5.3-1-9.8-4.6-11.9-9.6s-1.5-10.7 1.6-15.2L65.1 256 2.8 165.7c-3.1-4.5-3.7-10.2-1.6-15.2s6.6-8.6 11.9-9.6L121 121 140.9 13.1c1-5.3 4.6-9.8 9.6-11.9s10.7-1.5 15.2 1.6L256 65.1 346.3 2.8c4.5-3.1 10.2-3.7 15.2-1.6zM160 256a96 96 0 1 1 192 0 96 96 0 1 1 -192 0zm224 0a128 128 0 1 0 -256 0 128 128 0 1 0 256 0z"/></svg>
+                            <svg class="moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M223.5 32C100 32 0 132.3 0 256S100 480 223.5 480c60.6 0 115.5-24.2 155.8-63.4c5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6c-96.9 0-175.5-78.8-175.5-176c0-65.8 36-123.1 89.3-153.3c6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"/></svg>
+                        </label>
+                    </div>
+                    
+                    <li class="tablet:inline-block leading-[80px] tablet:mt-0 mt-[50px]">
+                        <a href="./pages/contacto.html" id="btnContacto" class="dark:text-shadow tablet:hover:bg-slate-500 p-2 rounded-md fhd:font-semibold transition duration-700 ease-in-out text- 3xl text-center bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 font-black">
+                        CONTACTO
+                        </a>
+                    </li>
+                    <li class="tablet:inline-block leading-[80px] tablet:mt-0 mt-[50px]">
+                        <a href="./pages/responsive.html" id="btnResposive" class="tablet:hover:bg-slate-500 p-2 rounded-md fhd:font-semibold transition duration-700 ease-in-out text- 3xl text-center bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 font-black dark:text-shadow">
+                        DISEÑO RESPONSIVO
+                        </a>
+                    </li>
+                    <li class="tablet:inline-block leading-[80px] tablet:mt-0 mt-[50px]">
+                        <a href="./pages/navbar.html" id="btnNav" class="tablet:hover:bg-slate-500 p-2 rounded-md fhd:font-semibold transition duration-700 ease-in-out text- 3xl text-center bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 font-black dark:text-shadow">
+                        NAVEGACION
+                        </a>
+                    </li>
+                </ul>
+                <div class="hidden tablet:block">
+                    <a href="./index.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="240" height="240" viewBox="0 0 24 24" style="fill: rgba(164, 138, 247, 1)" class="h-[60px] w-[60px] ml-5 mt-2 tabletXL:h-[100px] tabletXL:w-[100px]"><path d="M18.5 9.51a4.22 4.22 0 0 1-1.91-1.34A5.77 5.77 0 0 0 12 6a4.72 4.72 0 0 0-5 4 3.23 3.23 0 0 1 3.5-1.49 4.32 4.32 0 0 1 1.91 1.35A5.77 5.77 0 0 0 17 12a4.72 4.72 0 0 0 5-4 3.2 3.2 0 0 1-3.5 1.51zm-13 4.98a4.22 4.22 0 0 1 1.91 1.34A5.77 5.77 0 0 0 12 18a4.72 4.72 0 0 0 5-4 3.23 3.23 0 0 1-3.5 1.49 4.32 4.32 0 0 1-1.91-1.35A5.8 5.8 0 0 0 7 12a4.72 4.72 0 0 0-5 4 3.2 3.2 0 0 1 3.5-1.51z"></path></svg>
+                        
+                    </a>
+                </div>
             </div>
         </nav>             
     </header>
