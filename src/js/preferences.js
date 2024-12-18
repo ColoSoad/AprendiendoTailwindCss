@@ -7,6 +7,9 @@ const inputCorreo = document.querySelector('#correo');
 const inputContraseña = document.querySelector('#password');
 const buttonIngresar = document.querySelector('#buttonIngresar');
 
+const inputBurger = document.querySelector('#burger');
+const mainElement = document.querySelector('#main');
+
 const URL = '../assets/json/en.json';
 
 // Función para obtener el archivo JSON y cambiar el texto
@@ -66,6 +69,14 @@ function recuperarInfoDePreferences() {
 inputCorreo.addEventListener('input', function () {
     // Uso de un operador ternario para habilitar/deshabilitar el input de contraseña
     inputContraseña.disabled = inputCorreo.value === '' ? true : false;
+});
+
+inputBurger.addEventListener('change', () => {
+    if (inputBurger.checked) {
+        mainElement.classList.add('hidden');
+    } else {
+        mainElement.classList.remove('hidden');
+    }
 });
 
 recuperarInfoDePreferences();

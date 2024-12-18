@@ -1472,6 +1472,11 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-slate-400 {
+  --tw-text-opacity: 1;
+  color: rgb(148 163 184 / var(--tw-text-opacity));
+}
+
 .opacity-100 {
   opacity: 1;
 }
@@ -1721,10 +1726,6 @@ video {
   content: var(--tw-content);
 }
 
-.focus-within\:bg-transparent:focus-within {
-  background-color: transparent;
-}
-
 .hover\:bg-pink-600:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(219 39 119 / var(--tw-bg-opacity));
@@ -1780,10 +1781,6 @@ video {
   border-left-color: rgb(219 39 119 / var(--tw-border-opacity));
 }
 
-.focus\:bg-transparent:focus {
-  background-color: transparent;
-}
-
 .focus\:outline-none:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
@@ -1814,22 +1811,9 @@ video {
   --tw-ring-color: rgb(220 38 38 / var(--tw-ring-opacity));
 }
 
-.active\:bg-slate-500:active {
-  --tw-bg-opacity: 1;
-  background-color: rgb(100 116 139 / var(--tw-bg-opacity));
-}
-
-.active\:bg-transparent:active {
-  background-color: transparent;
-}
-
 .disabled\:bg-red-200:disabled {
   --tw-bg-opacity: 1;
   background-color: rgb(254 202 202 / var(--tw-bg-opacity));
-}
-
-.group:focus-within .group-focus-within\:bg-transparent {
-  background-color: transparent;
 }
 
 .peer:checked ~ .peer-checked\:left-0 {
@@ -1871,6 +1855,10 @@ video {
 .dark\:bg-white:is(.dark *) {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.dark\:fill-slate-100:is(.dark *) {
+  fill: #f1f5f9;
 }
 
 .dark\:text-slate-300:is(.dark *) {
@@ -2162,6 +2150,18 @@ video {
     text-align: left;
   }
 
+  .tablet\:static {
+    position: static;
+  }
+
+  .tablet\:top-0 {
+    top: 0px;
+  }
+
+  .tablet\:-top-10 {
+    top: -2.5rem;
+  }
+
   .tablet\:mb-4 {
     margin-bottom: 1rem;
   }
@@ -2174,12 +2174,98 @@ video {
     margin-top: 1.5rem;
   }
 
+  .tablet\:mt-0 {
+    margin-top: 0px;
+  }
+
+  .tablet\:-mt-100 {
+    margin-top: -400px;
+  }
+
+  .tablet\:-mt-10 {
+    margin-top: -2.5rem;
+  }
+
+  .tablet\:-mt-20 {
+    margin-top: -5rem;
+  }
+
+  .tablet\:-mt-28 {
+    margin-top: -7rem;
+  }
+
+  .tablet\:-mt-\[108px\] {
+    margin-top: -108px;
+  }
+
+  .tablet\:-mt-\[100px\] {
+    margin-top: -100px;
+  }
+
+  .tablet\:-mt-\[98px\] {
+    margin-top: -98px;
+  }
+
+  .tablet\:-mt-\[95px\] {
+    margin-top: -95px;
+  }
+
+  .tablet\:-mt-\[90px\] {
+    margin-top: -90px;
+  }
+
+  .tablet\:mt-10 {
+    margin-top: 2.5rem;
+  }
+
+  .tablet\:mt-12 {
+    margin-top: 3rem;
+  }
+
+  .tablet\:mt-20 {
+    margin-top: 5rem;
+  }
+
+  .tablet\:block {
+    display: block;
+  }
+
+  .tablet\:inline-block {
+    display: inline-block;
+  }
+
+  .tablet\:hidden {
+    display: none;
+  }
+
+  .tablet\:h-20 {
+    height: 5rem;
+  }
+
   .tablet\:w-60 {
     width: 15rem;
   }
 
   .tablet\:w-screen {
     width: 100vw;
+  }
+
+  .tablet\:w-full {
+    width: 100%;
+  }
+
+  .tablet\:bg-\[\#fff\] {
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  }
+
+  .tablet\:bg-fucsiaCool {
+    --tw-bg-opacity: 1;
+    background-color: rgb(74 4 78 / var(--tw-bg-opacity));
+  }
+
+  .tablet\:text-center {
+    text-align: center;
   }
 
   .tablet\:text-3xl {
@@ -2190,6 +2276,11 @@ video {
   .tablet\:text-6xl {
     font-size: 3.75rem;
     line-height: 1;
+  }
+
+  .tablet\:hover\:bg-slate-500:hover {
+    --tw-bg-opacity: 1;
+    background-color: rgb(100 116 139 / var(--tw-bg-opacity));
   }
 }
 
@@ -2285,6 +2376,11 @@ video {
     line-height: 1;
   }
 
+  .tabletXL\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
   .tabletXL\:hover\:bg-slate-500:hover {
     --tw-bg-opacity: 1;
     background-color: rgb(100 116 139 / var(--tw-bg-opacity));
@@ -2328,14 +2424,6 @@ video {
 }
 
 @media (min-width: 1280px) {
-  .fhd\:mt-4 {
-    margin-top: 1rem;
-  }
-
-  .fhd\:mt-12 {
-    margin-top: 3rem;
-  }
-
   .fhd\:mt-14 {
     margin-top: 3.5rem;
   }
@@ -2353,22 +2441,8 @@ video {
     line-height: 1;
   }
 
-  .fhd\:text-7xl {
-    font-size: 4.5rem;
-    line-height: 1;
-  }
-
-  .fhd\:text-8xl {
-    font-size: 6rem;
-    line-height: 1;
-  }
-
   .fhd\:font-semibold {
     font-weight: 600;
-  }
-
-  .fhd\:font-black {
-    font-weight: 900;
   }
 }
 

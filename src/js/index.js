@@ -3,11 +3,6 @@ const containerDarkMode = document.querySelector('.containerDarkMode');
 const darkModeInput = document.querySelector('#darkMode');
 const labelDarkMode = document.querySelector('#label_darkMode');
 
-//DARKMODE NAV
-// const containerDarkModeNav = document.querySelector('.containerDarkModeNav');
-// const darkModeInputNav = document.querySelector('#darkModeNav');
-// const labelDarkModeNav = document.querySelector('#label_darkNav');
-
 //ENLACE AL DOM LENGUAJE
 const containerLeguaje = document.querySelector('.container-lenguajes');
 const lenguajeInput = document.querySelector('#lenguaje');
@@ -17,6 +12,9 @@ const h2Index = document.querySelector('#h2-index');
 const buttonContacto = document.querySelector('#btnContacto');
 const buttonResponsive = document.querySelector('#btnResposive');
 const buttonNav = document.querySelector('#btnNav');
+const buttonContactoNav = document.querySelector('#btnContactoNav');
+const buttonResponsiveNav = document.querySelector('#btnResposiveNav');
+const buttonNavNav = document.querySelector('#btnNavNav');
 const pFooter = document.querySelector('#footerP');
 
 //LENGUAJE NAV
@@ -121,6 +119,9 @@ function cambiar(data) {
         buttonContacto.textContent = data[0].index.btnContacto;
         buttonResponsive.textContent = data[0].index.btnResponsive;
         buttonNav.textContent = data[0].index.btnNav;
+        buttonContactoNav.textContent = data[0].index.btnContacto;
+        buttonResponsiveNav.textContent = data[0].index.btnResponsive;
+        buttonNavNav.textContent = data[0].index.btnNav;
         pFooter.textContent = data[0].index.footer;
     } else {
         // Cambiar de nuevo al español
@@ -129,6 +130,9 @@ function cambiar(data) {
         buttonContacto.textContent = 'CONTACTO';
         buttonResponsive.textContent = 'DISEÑO RESPONSIVO';
         buttonNav.textContent = 'NAVEGACIÓN';
+        buttonContactoNav.textContent = 'CONTACTO';
+        buttonResponsiveNav.textContent = 'DISEÑO RESPONSIVO';
+        buttonNavNav.textContent = 'NAVEGACIÓN';
         pFooter.textContent = 'Todos los derechos reservados.';
     }
 }
@@ -150,7 +154,6 @@ function guardarInfoDeDarkMode(darkie, isChecked) {
     const infoDark = {
         darkie: darkie,
         isChecked: isChecked,
-        // isCheckedNav: isCheckedNav,
     };
     localStorage.setItem('infoDark', JSON.stringify(infoDark));
 }
@@ -184,31 +187,13 @@ darkModeInput.addEventListener('change', (event) => {
 
     if (darkModeInput.checked) {
         labelDarkMode.innerHTML = sun;
-        // labelDarkModeNav.innerHTML = sun;
     } else {
         labelDarkMode.innerHTML = moon;
-        // labelDarkModeNav.innerHTML = moon;
     }
 
     // Guardar el estado actual en localStorage
     guardarInfoDeDarkMode(darkie, darkModeInput.checked);
 });
-
-// Escuchar los cambios en el checkbox de DarkNav
-// darkModeInputNav.addEventListener('change', (event) => {
-//     document.documentElement.classList.toggle(darkie);
-
-//     if (darkModeInputNav.checked) {
-//         labelDarkMode.innerHTML = sun;
-//         // labelDarkModeNav.innerHTML = sun;
-//     } else {
-//         labelDarkMode.innerHTML = moon;
-//         // labelDarkModeNav.innerHTML = moon;
-//     }
-
-//     // Guardar el estado actual en localStorage
-//     guardarInfoDeDarkMode(darkie, darkModeInput.checked);
-// });
 
 inputBurger.addEventListener('change', () => {
     if (inputBurger.checked) {
