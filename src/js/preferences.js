@@ -1,7 +1,14 @@
 const pFooter = document.querySelector('#footerP');
+
 const tituloContacto = document.querySelector('#titulo-contacto');
 const btnContactoClick = document.querySelector('#btnClick');
 const inputBtnClick = document.querySelector('#inputBtnContacto');
+
+// ENLACES A LOS BOTONES DE NAVEGACION Y NAVEGACION RESPONSIVE (PARA CAMBIOS DE ESTADO POR IDIOMA)
+const buttonContactoNav = document.querySelector('#btnContactoNav');
+const buttonResponsiveNav = document.querySelector('#btnResposiveNav');
+const buttonNavNav = document.querySelector('#btnNavNav');
+
 const inputNombre = document.querySelector('#inputNombre');
 const inputCorreo = document.querySelector('#correo');
 const inputContraseña = document.querySelector('#password');
@@ -38,6 +45,9 @@ function cambiar(data, checker) {
         inputCorreo.placeholder = data[0].contacto.inputCorreo;
         inputContraseña.placeholder = data[0].contacto.inputContraseña;
         buttonIngresar.value = data[0].contacto.buttonIngresar;
+        buttonContactoNav.textContent = data[0].index.btnInicio;
+        buttonResponsiveNav.textContent = data[0].index.btnResponsive;
+        buttonNavNav.textContent = data[0].index.btnNav;
     } else {
         pFooter.textContent;
         tituloContacto.textContent;
@@ -47,6 +57,9 @@ function cambiar(data, checker) {
         inputCorreo.placeholder;
         inputContraseña.placeholder;
         buttonIngresar.value;
+        buttonContactoNav.textContent;
+        buttonNavNav.textContent;
+        buttonResponsiveNav.textContent;
     }
 }
 

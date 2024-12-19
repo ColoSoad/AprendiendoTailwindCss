@@ -3,6 +3,14 @@ const tituloPrincipalNavbars = document.querySelector('#titulo-navbars');
 const nav1 = document.querySelector('#nav1');
 const nav2 = document.querySelector('#nav2');
 
+// ENLACES A LOS BOTONES DE NAVEGACION Y NAVEGACION RESPONSIVE (PARA CAMBIOS DE ESTADO POR IDIOMA)
+const buttonContactoNav = document.querySelector('#btnContactoNav');
+const buttonResponsiveNav = document.querySelector('#btnResposiveNav');
+const buttonNavNav = document.querySelector('#btnNavNav');
+
+const inputBurger = document.querySelector('#burger');
+const mainElement = document.querySelector('#main');
+
 const URL = '../assets/json/en.json';
 
 // Función para obtener el archivo JSON y cambiar el texto
@@ -27,9 +35,15 @@ function cambiar(data, checker) {
         tituloPrincipalNavbars.textContent = data[0].navbars.tituloPrincipalNavbars;
         nav1.textContent = data[0].navbars.nav1;
         nav2.textContent = data[0].navbars.nav2;
+        buttonContactoNav.textContent = data[0].index.btnContacto;
+        buttonNavNav.textContent = data[0].index.btnInicio;
+        buttonResponsiveNav.textContent = data[0].index.btnResponsive;
     } else {
         pFooter.textContent;
         tituloPrincipalNavbars.textContent;
+        buttonContactoNav.textContent;
+        buttonNavNav.textContent;
+        buttonResponsiveNav.textContent;
     }
 }
 
@@ -47,4 +61,13 @@ function recuperarInfoDePreferences() {
         }
     }
 }
+
+inputBurger.addEventListener('change', () => {
+    if (inputBurger.checked) {
+        mainElement.classList.add('hidden');
+    } else {
+        mainElement.classList.remove('hidden');
+    }
+});
+
 recuperarInfoDePreferences();
