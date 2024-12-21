@@ -6,6 +6,14 @@ const wallBasis = document.querySelector('#wallBasis');
 const collageBasis = document.querySelector('#collageBasis');
 const layoutGrid = document.querySelector('#layoutGrid');
 const collageGrid = document.querySelector('#collageGrid');
+// ENLACES A LOS BOTONES DE NAVEGACION Y NAVEGACION RESPONSIVE (PARA CAMBIOS DE ESTADO POR IDIOMA)
+const buttonContactoNav = document.querySelector('#btnContactoNav');
+const buttonResponsiveNav = document.querySelector('#btnResposiveNav');
+const buttonNavNav = document.querySelector('#btnNavNav');
+
+const inputBurger = document.querySelector('#burger');
+const mainElement = document.querySelector('#main');
+
 const URL = '../assets/json/en.json';
 
 // Función para obtener el archivo JSON y cambiar el texto
@@ -34,6 +42,9 @@ function cambiar(data, checker) {
         collageBasis.textContent = data[0].responsivo.collageBasis;
         layoutGrid.textContent = data[0].responsivo.layoutGrid;
         collageGrid.textContent = data[0].responsivo.collageGrid;
+        buttonContactoNav.textContent = data[0].index.btnContacto;
+        buttonNavNav.textContent = data[0].index.btnNav;
+        buttonResponsiveNav.textContent = data[0].index.btnInicio;
     } else {
         pFooter.textContent;
         tituloPrincipalDiseño.textContent;
@@ -43,6 +54,9 @@ function cambiar(data, checker) {
         collageBasis.textContent;
         layoutGrid.textContent;
         collageGrid.textContent;
+        buttonContactoNav.textContent;
+        buttonNavNav.textContent;
+        buttonResponsiveNav.textContent;
     }
 }
 
@@ -60,4 +74,13 @@ function recuperarInfoDePreferences() {
         }
     }
 }
+
+inputBurger.addEventListener('change', () => {
+    if (inputBurger.checked) {
+        mainElement.classList.add('hidden');
+    } else {
+        mainElement.classList.remove('hidden');
+    }
+});
+
 recuperarInfoDePreferences();
