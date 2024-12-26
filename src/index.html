@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" type="icono" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeKPw4CK4jcH7udsFHZdiB3iIOuI3fUCsxUZosXy4Y1yd25NA-dzCBPrSDIhg1BwObl3w&usqp=CAU" />
     <script defer src="./js/index.js"></script>
+    <script defer src="./js/carousel.js"></script>
     <title>Tailwind - install</title>
 </head>
 
@@ -81,7 +82,19 @@
                 </a>
             </div>
         </div>
-        <div class=" mt-10 pb-4 flex justify-center">
+        <div class="overflow-hidden mt-10 rounded-full w-4/5 mx-auto dark:btn-shadow">
+            <div class="flex flex-row flex-nowrap sliderInner transition-all ease-in-out duration-1000">
+                <!-- SLIDE 1 -->
+                
+                <img src="https://images3.alphacoders.com/130/1308690.jpg" alt="slide1" id="slide1" class="w-full cursor-pointer aspect-video object-cover object-center">
+                 <!-- SLIDE 2 -->
+                <img src="https://www.autoplusdigital.com.ar/wp-content/uploads/2023/04/autos-2.jpg" alt="slide2" id="slide2" class="w-full cursor-pointer aspect-video object-cover object-center">
+                <!-- SLIDE 3 -->
+                <img src="https://resizer.iproimg.com/unsafe/1280x/filters:format(webp):quality(85)/https://assets.iprofesional.com/assets/jpg/2023/10/561573.jpg" alt="slide3" id="slide3" class="w-full cursor-pointer aspect-video object-cover object-center">
+            </div>
+        </div>
+        
+        <!-- <div class=" mt-10 pb-4 flex justify-center">
             <a href="./pages/contacto.html" id="btnContacto" class="text- 5xl text-center text-white my-8 bg-gradient-to-r from-pink-500 to-violet-500 p-3 rounded-md w-48 mx-auto block hover:btn-shadow transition duration-300 ease-in-out">
                 CONTACTO
             </a>
@@ -94,7 +107,7 @@
             <a href="./pages/navbar.html" id="btnNav" class="text- 5xl text-center text-white my-8 bg-gradient-to-r from-pink-500 to-violet-500 p-3 rounded-md w-48 mx-auto block hover:btn-shadow transition duration-300 ease-in-out">
                 NAVEGACIÓN
             </a>
-        </div>
+        </div> -->
         <!-- <div class="pb-4 flex justify-center ">
             <a href="./pages/prueba.html" id="btnResposive" class="text- 5xl text-center text-white my-8 bg-gradient-to-r from-pink-500 to-violet-500 p-3 rounded-md w-48 mx-auto block hover:btn-shadow transition duration-300 ease-in-out">
                 PRUEBA
@@ -121,5 +134,8 @@
             </ul>
         </div>
     </footer>
+    <a class=" transition duration-300 hover:btn-shadow fixed left-4 bottom-4 text-center leading-10 rounded-full bg-gradient-to-r from-pink-500 to-violet-500 w-10 h-10 hover:bg-slate-600 shadow-md shadow-black" href="#">
+        <i class="fa-solid fa-chevron-up"></i>
+    </a>
 </body>
 </html>
