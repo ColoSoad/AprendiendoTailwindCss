@@ -76,23 +76,31 @@
             <h2 id="h2-index" class="text-2xl w-40 flex font-bold tablet:w-60 tablet:text-3xl tabletXL:w-125 tabletXL:text-4xl dark:text-slate-300 tablet:mt-6">
                 Esta es mi página para practicar y aprender!
             </h2>
-            <div class="bg-[url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeKPw4CK4jcH7udsFHZdiB3iIOuI3fUCsxUZosXy4Y1yd25NA-dzCBPrSDIhg1BwObl3w&usqp=CAU')] bg-cover bg-center p-3 rounded-full w-40 h-40 flex items-center cursor-pointer brightness-100 contrast-100 dark:btn-shadow">
+            <div class="bg-[url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeKPw4CK4jcH7udsFHZdiB3iIOuI3fUCsxUZosXy4Y1yd25NA-dzCBPrSDIhg1BwObl3w&usqp=CAU')] bg-cover bg-center p-3 rounded-full w-40 h-40 flex items-center cursor-pointer brightness-100 contrast-100 shadow-md shadow-black dark:btn-shadow">
                 <a class="text- 3xl text-center bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 font-black" href="https://tailwindcss.com/" target="blank">
                     TAILWIND.CSS 3.4.10
                 </a>
             </div>
         </div>
-        <div class="overflow-hidden mt-10 rounded-full w-4/5 mx-auto dark:btn-shadow">
+        <div class="overflow-hidden mt-10 rounded-lg w-4/5 mx-auto dark:btn-shadow shadow-lg shadow-black">
             <div class="flex flex-row flex-nowrap sliderInner transition-all ease-in-out duration-1000">
-                <!-- SLIDE 1 -->
-                
-                <img src="https://images3.alphacoders.com/130/1308690.jpg" alt="slide1" id="slide1" class="w-full cursor-pointer aspect-video object-cover object-center">
+                <!-- SLIDE 1 -->                 
+                <img src="./assets/img/contacto.jpg" alt="slide1" id="slide1" class="w-full cursor-pointer aspect-video object-cover object-center">
                  <!-- SLIDE 2 -->
                 <img src="https://www.autoplusdigital.com.ar/wp-content/uploads/2023/04/autos-2.jpg" alt="slide2" id="slide2" class="w-full cursor-pointer aspect-video object-cover object-center">
                 <!-- SLIDE 3 -->
                 <img src="https://resizer.iproimg.com/unsafe/1280x/filters:format(webp):quality(85)/https://assets.iprofesional.com/assets/jpg/2023/10/561573.jpg" alt="slide3" id="slide3" class="w-full cursor-pointer aspect-video object-cover object-center">
             </div>
         </div>
+         <!-- Indicadores -->
+         <div class="flex justify-center space-x-2 mt-10">
+            <a class="indicator w-3 h-3 rounded-full bg-[#8b5cf6]"  data-slide="0"></a>
+            <a class="indicator w-3 h-3 rounded-full bg-[#8b5cf6]" data-slide="1"></a>
+            <a class="indicator w-3 h-3 rounded-full bg-[#8b5cf6]" data-slide="2"></a>
+        </div>
+
+
+       
         
         <!-- <div class=" mt-10 pb-4 flex justify-center">
             <a href="./pages/contacto.html" id="btnContacto" class="text- 5xl text-center text-white my-8 bg-gradient-to-r from-pink-500 to-violet-500 p-3 rounded-md w-48 mx-auto block hover:btn-shadow transition duration-300 ease-in-out">
@@ -119,22 +127,22 @@
             <p class="font-semi-bold dark:text-slate-300">© 2024 TAILWINDCSS PRACTICE</p>
             <p id="footerP" class="font-semi-bold dark:text-slate-300">Todos los derechos reservados.</p>
             <ul class="flex justify-center flex-wrap gap-5 pt-2 dark:text-white">
-                <li class="transition duration-300 ease-in-out hover:btn-shadow-black hover:dark:btn-shadow-white w-10 h-10 flex justify-center bg-black items-center dark:bg-slate-200 shadow-xl text-3xl text-azulFb rounded-lg">
-                  <a href="https://www.facebook.com/colo.soad.3/" target="_blank" class="iconos-a">
+                <li class="transition duration-300 ease-in-out hover:btn-shadow-black hover:dark:btn-shadow-white w-10 h-10 flex justify-center bg-black items-center dark:bg-slate-200 shadow-md shadow-azulFb text-3xl text-azulFb rounded-lg">
+                  <a href="#" class="iconos-a">
                     <i class="fab fa-facebook-f icon p-2"></i>    </a>
                 </li>
-                <li class="transition duration-300 hover:btn-shadow w-10 h-10 flex justify-center items-center bg-black dark:bg-white shadow-xl text-3xl mx-9 rounded-lg text-insta">
-                    <a href="https://www.instagram.com/colosoad/" target="_blank" class="iconos-a ">
+                <li class="transition duration-300 hover:btn-shadow w-10 h-10 flex justify-center items-center bg-black dark:bg-white shadow-md shadow-insta text-3xl mx-9 rounded-lg text-insta">
+                    <a href="#" class="iconos-a ">
                     <i class="fab fa-instagram icon p-2"></i>
                     </a>
                 </li>
-                <li class="transition duration-300 hover:btn-shadow-blue w-10 h-10 flex justify-center items-center bg-linkaBg shadow-xl text-3xl rounded-lg text-linka">
+                <li class="transition duration-300 hover:btn-shadow-blue w-10 h-10 flex justify-center items-center bg-linkaBg shadow-md shadow-black text-3xl rounded-lg text-linka dark:shadow-azulFb">
                   <a href="#"><i class="fab fa-linkedin-in icon p-2"></i></a>
                 </li>
             </ul>
         </div>
     </footer>
-    <a class=" transition duration-300 hover:btn-shadow fixed left-4 bottom-4 text-center leading-10 rounded-full bg-gradient-to-r from-pink-500 to-violet-500 w-10 h-10 hover:bg-slate-600 shadow-md shadow-black" href="#">
+    <a class=" transition duration-300 hover:btn-shadow fixed left-4 bottom-4 text-center leading-10 rounded-full bg-gradient-to-r from-pink-500 to-violet-500 w-10 h-10 shadow-md shadow-black" href="#">
         <i class="fa-solid fa-chevron-up"></i>
     </a>
 </body>
