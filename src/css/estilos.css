@@ -313,3 +313,7 @@ svg {
         }
     }
 }
+
+.sliderInner > .divSliders {
+    min-width: 100%; /* Cada slide ocupa el 100% del ancho del carrusel */
+}
