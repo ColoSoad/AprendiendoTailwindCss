@@ -63,13 +63,13 @@
 // startAutoSlide();
 // updateIndicators();
 
-const slide1 = document.querySelector('.slide1');
-const slide2 = document.querySelector('.slide2');
-const slide3 = document.querySelector('.slide3');
+const slide1 = document.querySelector('#slide1');
+const slide2 = document.querySelector('#slide2');
+const slide3 = document.querySelector('#slide3');
 
 const sliderInner = document.querySelector('.sliderInner');
 const indicators = document.querySelectorAll('.indicator');
-const slides = sliderInner.querySelectorAll('.divSliders');
+const slides = sliderInner.querySelectorAll('img');
 let currentIndex = 0;
 let autoSlideInterval;
 
