@@ -333,7 +333,7 @@ svg {
 }
 
 .divSliders {
-    background: linear-gradient(135deg, #c058dd, #f33095, #8b5cf6, #8b5cf6);
+    background: linear-gradient(135deg, #c058dd, #f33095, #8b5cf6, #8b5cf6, #c058dd, #f33095);
     animation: bg 5s linear infinite;
 
     width: 100%;

@@ -930,10 +930,6 @@ video {
   height: 0.75rem;
 }
 
-.h-36 {
-  height: 9rem;
-}
-
 .h-40 {
   height: 10rem;
 }
@@ -966,20 +962,12 @@ video {
   height: calc(100vh - 80px);
 }
 
-.h-screen {
-  height: 100vh;
-}
-
-.h-100 {
-  height: 400px;
-}
-
-.h-200 {
-  height: 800px;
-}
-
 .h-full {
   height: 100%;
+}
+
+.h-screen {
+  height: 100vh;
 }
 
 .w-10 {
@@ -2487,16 +2475,8 @@ video {
     margin-top: 3.5rem;
   }
 
-  .fhd\:h-50 {
-    height: 200px;
-  }
-
   .fhd\:h-\[280px\] {
     height: 280px;
-  }
-
-  .fhd\:w-2\/3 {
-    width: 66.666667%;
   }
 
   .fhd\:pl-8 {
