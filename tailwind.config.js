@@ -46,6 +46,16 @@ module.exports = {
             backdropBlur: {
                 back: '5px',
             },
+            animation: {
+                bg: 'bg 5s linear infinite',
+            },
+            keyframes: {
+                bg: {
+                    '100%': {
+                        filter: 'hue-rotate(360deg)',
+                    },
+                },
+            },
         },
     },
     plugins: [

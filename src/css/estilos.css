@@ -331,15 +331,3 @@ svg {
 .slide2 {
     clip-path: polygon(0 0%, 100% 20%, 100% 100%, 0 100%);
 }
-
-.divSliders {
-    background: linear-gradient(135deg, #c058dd, #f33095, #8b5cf6, #8b5cf6, #c058dd, #f33095);
-    animation: bg 5s linear infinite;
-
-    width: 100%;
-}
-@keyframes bg {
-    100% {
-        filter: hue-rotate(360deg);
-    }
-}
