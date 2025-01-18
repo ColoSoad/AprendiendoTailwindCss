@@ -44,9 +44,9 @@
                         </a>
                     </li>
                 </ul>
-                <div class="hidden tablet:block" id="inicio">
+                <div class="block peer-checked:hidden" id="inicio">
                     <a href="../index.html">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 24 24" style="fill: rgba(164, 138, 247, 1)" class="h-[60px] w-[60px] left-4 mt-2"><path d="M18.5 9.51a4.22 4.22 0 0 1-1.91-1.34A5.77 5.77 0 0 0 12 6a4.72 4.72 0 0 0-5 4 3.23 3.23 0 0 1 3.5-1.49 4.32 4.32 0 0 1 1.91 1.35A5.77 5.77 0 0 0 17 12a4.72 4.72 0 0 0 5-4 3.2 3.2 0 0 1-3.5 1.51zm-13 4.98a4.22 4.22 0 0 1 1.91 1.34A5.77 5.77 0 0 0 12 18a4.72 4.72 0 0 0 5-4 3.23 3.23 0 0 1-3.5 1.49 4.32 4.32 0 0 1-1.91-1.35A5.8 5.8 0 0 0 7 12a4.72 4.72 0 0 0-5 4 3.2 3.2 0 0 1 3.5-1.51z"></path></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 24 24" style="fill: rgba(164, 138, 247, 1)" class="h-[60px] w-[60px] right-4 tabletXL:left-4 mt-2"><path d="M18.5 9.51a4.22 4.22 0 0 1-1.91-1.34A5.77 5.77 0 0 0 12 6a4.72 4.72 0 0 0-5 4 3.23 3.23 0 0 1 3.5-1.49 4.32 4.32 0 0 1 1.91 1.35A5.77 5.77 0 0 0 17 12a4.72 4.72 0 0 0 5-4 3.2 3.2 0 0 1-3.5 1.51zm-13 4.98a4.22 4.22 0 0 1 1.91 1.34A5.77 5.77 0 0 0 12 18a4.72 4.72 0 0 0 5-4 3.23 3.23 0 0 1-3.5 1.49 4.32 4.32 0 0 1-1.91-1.35A5.8 5.8 0 0 0 7 12a4.72 4.72 0 0 0-5 4 3.2 3.2 0 0 1 3.5-1.51z"></path></svg>
                         
                     </a>
                 </div>
@@ -112,7 +112,39 @@
             </form>
         </div>
     </main>
-    <footer>
+    <footer class="w-full mt-10">
+        <p class="text-center font-semi-bold text-slate-600 dark:text-slate-300">© 2024 TAILWINDCSS PRACTICE</p>
+        <p id="footerP" class="text-center font-semi-bold text-slate-600 dark:text-slate-300">Todos los derechos reservados.</p>
+        <div class="contenedor flex justify-center my-8">
+            <div class="boton dark:btn-shadow inline-block h-[60px] w-[60px] mx-1.25 overflow-hidden bg-white rounded-[50px] cursor-pointer shadow-custom transition-all duration-700 ease-out hover:w-50 hover:bg-[#d7e1ec] hover:text-[#fff]" id="icon-instagram">
+                <div class="icono inline-block h-[60px] w-[60px] rounded-[50px] box-border leading-[60px] text-center transition-all duration-700 ease-out hover:btn-shadow">
+                    <i class="fab fa-instagram text-[25px]" aria-hidden="true"></i>
+                </div>
+                <span class="bg-clip-text text-transparent bg-gradient-to-r from-[#e74f31] via-[#d41356] to-[#3040e6] text-[16px] font-extrabold leading-[60px] ml-[10px]">
+                    Instagram
+                </span>
+            </div>
+
+            <div class="boton dark:btn-shadow inline-block h-[60px] w-[60px] mx-1.25 overflow-hidden bg-white rounded-[50px] cursor-pointer shadow-custom transition-all duration-700 ease-out hover:w-50 hover:bg-[#d7e1ec]" id="icon-linkedin">
+                <div class="icono inline-block h-[60px] w-[60px] rounded-[50px] box-border leading-[60px] text-center transition-all duration-700 ease-out btn-shadow-blue">
+                    <i class="fab fa-linkedin text-[25px]" aria-hidden="true"></i>
+                </div>
+                <span class="text-[#306cb2] text-[16px] font-extrabold leading-[60px] ml-[10px]">
+                    LinkedIn
+                </span>
+            </div>
+
+            <div class="boton dark:btn-shadow inline-block h-[60px] w-[60px] mx-1.25 overflow-hidden bg-white rounded-[50px] cursor-pointer shadow-custom transition-all duration-700 ease-out hover:w-50 hover:bg-[#d7e1ec]" id="icon-github">
+                <div class="icono inline-block h-[60px] w-[60px] rounded-[50px] box-border leading-[60px] text-center transition-all duration-700 ease-out hover:btn-shadow-black">
+                    <i class="fab fa-github text-[25px]" aria-hidden="true"></i>
+                </div>
+                <span  class="text-slate-900 text-[16px] font-extrabold leading-[60px] ml-[10px]">
+                    GitHub
+                </span>
+            </div>
+        </div>
+    </footer>
+    <!-- <footer>
         <div class="text-center py-10">
             <p class="font-semi-bold dark:text-slate-300">© 2024 TAILWINDCSS PRACTICE</p>
             <p id="footerP" class="font-semi-bold dark:text-slate-300">Todos los derechos reservados.</p>
@@ -131,7 +163,7 @@
                 </li>
             </ul>
         </div>
-    </footer>
+    </footer> -->
     <a class=" transition duration-300 hover:btn-shadow fixed left-4 bottom-4 text-center leading-10 rounded-full bg-gradient-to-r from-pink-500 to-violet-500 w-10 h-10 shadow-md shadow-black" href="#">
         <i class="fa-solid fa-chevron-up"></i>
     </a>

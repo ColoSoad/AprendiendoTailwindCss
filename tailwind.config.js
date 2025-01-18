@@ -15,6 +15,7 @@ module.exports = {
                 linka: '#080808',
             },
             spacing: {
+                1.25: '5px',
                 42: '170px',
                 50: '200px',
                 100: '400px',
@@ -55,6 +56,21 @@ module.exports = {
                         filter: 'hue-rotate(360deg)',
                     },
                 },
+            },
+            fontFamily: {
+                courier: ["'Courier New', 'Courier', 'monospace'"],
+                LucidaSans: [
+                    "'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif",
+                ],
+            },
+            boxShadow: {
+                custom: '0 10px 10px rgba(0, 0, 0, 0.1)',
+            },
+            fontSize: {
+                '25px': '25px',
+            },
+            backgroundImage: {
+                'custom-gradient': 'linear-gradient(30deg, #3040e6 10%, #d41356, #e74f31, #f0ce3d)',
             },
         },
     },

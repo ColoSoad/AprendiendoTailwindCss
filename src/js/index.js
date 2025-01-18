@@ -2,6 +2,9 @@
 const containerDarkMode = document.querySelector('.containerDarkMode');
 const darkModeInput = document.querySelector('#darkMode');
 const labelDarkMode = document.querySelector('#label_darkMode');
+const iconInstagram = document.querySelector('#icon-instagram');
+const iconLinkedin = document.querySelector('#icon-linkedin');
+const iconGituhub = document.querySelector('#icon-github');
 
 //ENLACE AL DOM LENGUAJE
 const containerLeguaje = document.querySelector('.container-lenguajes');
@@ -202,3 +205,13 @@ inputBurger.addEventListener('change', () => {
         mainElement.classList.remove('hidden');
     }
 });
+
+// iconInstagram.addEventListener('click', (e) => {
+//     location.href = './index.html';
+// });
+// iconLinkedin.addEventListener('click', (e) => {
+//     location.href = './index.html';
+// });
+// iconGituhub.addEventListener('click', (e) => {
+//     location.href = './index.html';
+// });
