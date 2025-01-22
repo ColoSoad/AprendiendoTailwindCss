@@ -93,9 +93,3 @@ inputBurger.addEventListener('change', () => {
 });
 
 recuperarInfoDePreferences();
-
-// obtenerJson();
-
-// Llamar a la función para cargar el estado al iniciar la página
-// cargarEstadoDeLenguaje();
-// obtener(); // Llamamos obtener inicialmente para ajustar el texto según el estado actual del checkbox

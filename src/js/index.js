@@ -206,6 +206,8 @@ inputBurger.addEventListener('change', () => {
     }
 });
 
+// para direccionar los iconos
+
 // iconInstagram.addEventListener('click', (e) => {
 //     location.href = './index.html';
 // });

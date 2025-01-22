@@ -55,6 +55,7 @@ indicators.forEach((indicator, index) => {
     });
 });
 
+// redireccionar cada slides
 slide1.addEventListener('click', (e) => {
     location.href = 'pages/contacto.html';
 });
