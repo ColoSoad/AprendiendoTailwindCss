@@ -1,0 +1,13 @@
+.contenedor .boton:nth-child(1):hover .icono {
+    background: linear-gradient(30deg, #3040e6 10%, #d41356, #e74f31, #f0ce3d);
+    color: #fff;
+}
+
+.contenedor .boton:nth-child(2):hover .icono {
+    background: #306cb2;
+    color: #fff;
+}
+.contenedor .boton:nth-child(3):hover .icono {
+    background: #171515;
+    color: #fff;
+}
